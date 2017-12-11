@@ -224,6 +224,34 @@ quindi
 	&=1
 	\end{align*}
 \end{exercise}
+\begin{exercise}
+\begin{equation*}
+\lim_{x\to +\infty}\dfrac{x^2-x+1}{x^4-3x+4}
+\end{equation*}
+\tcblower
+Limite del tipo infinito su infinito, si procede riscrivendo la frazione 
+\begin{align*}
+\lim_{x\to +\infty}\dfrac{x^2-x+1}{x^4-3x+4}=&\\
+&=\lim_{x\to +\infty}\dfrac{x^2\left(1-\dfrac{x}{x^2}+\dfrac{1}{x^2}\right)}{x^4\left(1-\dfrac{3x}{x^4}+\dfrac{4}{x^4}\right)}
+\intertext{semplifico}
+&=\lim_{x\to +\infty}\dfrac{1-\dfrac{1}{x}+\dfrac{1}{x^2}}{x^2\left(1-\dfrac{3}{x^3}+\dfrac{4}{x^4}\right)}\\
+&=0
+\end{align*}
+\end{exercise}
+\begin{exercise}
+	\begin{equation*}
+	\lim_{x\to +\infty}\dfrac{x^5-3x+1}{2x+1}
+	\end{equation*}
+	\tcblower
+	Limite del tipo infinito su infinito, si procede riscrivendo la frazione 
+	\begin{align*}
+	\lim_{x\to +\infty}\dfrac{x^5-3x+1}{2x+1}=&\\
+	&=\lim_{x\to +\infty}\dfrac{x^5\left(1-\dfrac{3x}{x^5}+\dfrac{1}{x^5}\right)}{x\left(2+\dfrac{1}{x}\right)}
+	\intertext{semplifico}
+	&=\lim_{x\to +\infty}\dfrac{x^4\left(1-\dfrac{3}{x^4}+\dfrac{1}{x^5}\right)}{2+\dfrac{1}{x}}\\
+	&=\infty
+	\end{align*}
+\end{exercise}
 \tcbstoprecording
 \newpage
 \section{Soluzioni limiti}
