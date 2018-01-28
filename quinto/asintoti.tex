@@ -13,6 +13,12 @@ Risolvi i seguenti esercizi
 %	\frac{d}{dx}\left(\ln|x|\right) = \frac{1}{x}.
 %	\end{equation*}
 %\end{exercise}
+\begin{exercise}[no solution]
+	
+	\begin{equation*}
+	f(x)= \frac{2x^2+1}{x-1}.
+	\end{equation*}
+\end{exercise}
 \begin{exercise}
 \[y=\dfrac{x^2-5x+6}{x^2-1}\]
 	\tcblower
@@ -27,16 +33,54 @@ x_2=-1
 \end{cases}\\
 \end{align*}
 Quindi il dominio della funzione è  $x\neq\pm1$
-Studio il segno della funzione
-\begin{equation*}
-\dfrac{x^2-5x+6}{x^2-1}\geq 0
-\end{equation*}
-Calcolo il limite 
-\begin{equation*}\lim_{x\to -1}\frac{x^2-5x+6}{x^2-1}=\dfrac{1+6+6}{0}
-\end{equation*}
-Questo limite è un infinito
+
+Calcolo il limite
+\begin{align*}
+\lim_{x\to 1^+}\frac{x^2-5x+6}{x^2-1}=&\\
+\intertext{Dato che}
+(1^+)^2-1>&0\\
+(1^+)^2-5\cdot 1^++6>&0\\
+\intertext{otteniamo}
+\lim_{x\to 1^+}\frac{x^2-5x+6}{x^2-1}=&+\infty\\
+\end{align*} 
+Calcolo il limite
+\begin{align*}
+\lim_{x\to 1^-}\frac{x^2-5x+6}{x^2-1}=&\\
+\intertext{Dato che}
+(1^-)^2-1<&0\\
+(1^-)^2-5\cdot 1^++6>&0\\
+\intertext{otteniamo}
+\lim_{x\to 1^+}\frac{x^2-5x+6}{x^2-1}=&+\infty\\
+\end{align*} 
+quindi $x=1$ è un asintoto verticale.
+Calcolo il limite
+\begin{align*}
+\lim_{x\to -1^+}\frac{x^2-5x+6}{x^2-1}=&\\
+\intertext{Dato che}
+(-1^+)^2-1<&0\\
+(-1^+)^2-5\cdot (-1^+)+6>&0\\
+\intertext{otteniamo}
+\lim_{x\to 1^+}\frac{x^2-5x+6}{x^2-1}=&-\infty\\
+\end{align*} 
+Calcolo il limite
+\begin{align*}
+\lim_{x\to -1^-}\frac{x^2-5x+6}{x^2-1}=&\\
+\intertext{Dato che}
+(-1^-)^2-1>&0\\
+(-1^-)^2-5\cdot (-1^-)+6>&0\\
+\intertext{otteniamo}
+\lim_{x\to 1^+}\frac{x^2-5x+6}{x^2-1}=&+\infty\\
+\end{align*} 
+quindi $x=-1$ è un asintoto verticale.
+\end{exercise}
+\begin{exercise}[no solution]
+	
+	\begin{equation*}
+	f(x)= \frac{x^2+1}{x^2-4}.
+	\end{equation*}
 \end{exercise}
 \begin{exercise}
+	Trovare gli asintoti richiesti
 \[y=\dfrac{3x^2+5x+2}{x^2-1}\]
 	\tcblower
  il dominio
@@ -74,7 +118,7 @@ quindi
 =&\lim_{x\to -1}\dfrac{3x+2}{x-1}\\
 =&\dfrac{1}{2}
 \end{align*}
-Quindi $x=-1$ non è asintoto verticale. Utilizzando i calcoli precedenti ottengo il limite:
+Quindi $x=-1$ non è asintoto verticale. Utilizzando i calcoli precedenti otteniamo il limite:
 \begin{equation*}
 \lim_{x\to 1}\dfrac{3x^2+5x+2}{x^2-1}=\lim_{x\to 1}\dfrac{3x+2}{x-1}
 \end{equation*}
@@ -88,7 +132,7 @@ x\geq&-\dfrac{2}{3}\\
 x-1>&0\\
 x>&1
 \end{align*}
-ottengo il grafico
+otteniamo il grafico
 \begin{center}
 	\includestandalone{quinto/grafici/disprimogradodueb}
 \end{center}\index{Limite!infinito!tende finito}
@@ -98,8 +142,35 @@ Quindi la frazione è positiva per valori a destra di uno negativa a sinistra. S
 \lim_{x\to 1^-}\dfrac{3x+2}{x-1}=&-\infty\\
 \end{align*}
 Quindi $x=1$ è asintoto verticale\index{Asintoto!verticale}
+Potevamo procedere anche come segue:
+ 
+Calcolo il limite
+\begin{align*}
+\lim_{x\to 1^+}\frac{3x+2}{x-1}=&\\
+\intertext{Dato che}
+1^+-1>&0\\
+3\cdot (1^+)+2>&0\\
+\intertext{otteniamo}
+\lim_{x\to 1^+}\frac{3x+2}{x-1}=&+\infty\\
+\end{align*} 
+Calcolo il limite
+\begin{align*}
+\lim_{x\to 1^-}\frac{3x+2}{x-1}=&\\
+\intertext{Dato che}
+1^--1<&0\\
+3\cdot (1^-)+2>&0\\
+\intertext{otteniamo}
+\lim_{x\to 1^-}\frac{3x+2}{x-1}=&-\infty\\
+\end{align*} 
+\end{exercise}
+\begin{exercise}[no solution]
+	
+	\begin{equation*}
+	f(x)= \frac{2x^2+x}{x^2+2x+1}.
+	\end{equation*}
 \end{exercise}
 \begin{exercise}
+	Trovare gli asintoti richiesti
 \[y=\dfrac{x^2+4x+3}{x^2+3x+5}\]
 	\tcblower
 Determino il dominio ponendo il denominatore uguale a zero
@@ -110,7 +181,7 @@ x_{1,2}=&\dfrac{-3\pm\sqrt{9-20}}{2}\\
 \end{align*}
 La funzione non ha asintoti verticali
 \end{exercise}
-\begin{exercise}
+\begin{exercise}Trovare gli asintoti richiesti
 \[y=\dfrac{3x^2+1}{x^3+x^2} \]
 	\tcblower
 \begin{align*}
@@ -136,15 +207,62 @@ Utilizzando i risultati precedenti otteniamo il grafico
 	\includestandalone{quinto/grafici/distreparti}
 \end{center}
 In base a quanto detto 
-\begin{align}
+\begin{align*}
 \lim_{x\to 0}\dfrac{3x^2+1}{x^3+x^2}=&+\infty\\
 \lim_{x\to 1^-}\dfrac{3x^2+1}{x^3+x^2}=&-\infty\\
 \lim_{x\to 1^+}\dfrac{3x^2+1}{x^3+x^2}=&+\infty\\
-\end{align}
+\end{align*}
+Otteniamo lo stesso risultato nel seguente modo:
+\begin{align*}
+\lim_{x\to 0^+}\dfrac{3x^2+1}{x^3+x^2}=&
+\intertext{Dato che}
+3(0^+)^2+1>&0\\
+x^3+x^2=&x^2(x+1)\\
+(0^+)^2(0^++1)>&0
+\intertext{otteniamo}
+\lim_{x\to 0^+}\dfrac{3x^2+1}{x^3+x^2}=&+\infty
+\end{align*}
+continuiamo 
+\begin{align*}
+\lim_{x\to 0^-}\dfrac{3x^2+1}{x^3+x^2}=&
+\intertext{Dato che}
+3(0^-)^2+1>&0\\
+x^3+x^2=&x^2(x+1)\\
+(0^-)^2(0^-+1)>&0
+\intertext{otteniamo}
+\lim_{x\to 0^-}\dfrac{3x^2+1}{x^3+x^2}=&+\infty
+\end{align*}
+concludendo
+\begin{align*}
+\lim_{x\to -1^+}\dfrac{3x^2+1}{x^3+x^2}=&
+\intertext{Dato che}
+3(-1^+)^2+1>&0\\
+x^3+x^2=&x^2(x+1)\\
+(-1^+)^2(-1^++1)>&0
+\intertext{otteniamo}
+\lim_{x\to -1^+}\dfrac{3x^2+1}{x^3+x^2}=&+\infty
+\end{align*}
+continuiamo 
+\begin{align*}
+\lim_{x\to -1^-}\dfrac{3x^2+1}{x^3+x^2}=&
+\intertext{Dato che}
+3(-1^-)^++1>&0\\
+x^3+x^2=&x^2(x+1)\\
+(-1^-)^2(-1^-+1)<&0
+\intertext{otteniamo}
+\lim_{x\to -1^-}\dfrac{3x^2+1}{x^3+x^2}=&-\infty
+\end{align*}
+\end{exercise}
+\begin{exercise}[no solution]
+	
+	\begin{equation*}
+	f(x)= \frac{x+1}{2x-1}.
+	\end{equation*}
 \end{exercise}
 \section{Asintoti orizzontali}
 Risolvi i seguenti esercizi
 \begin{exercise}
+	Trovare gli asintoti richiesti
 \[y=\dfrac{3x^2+5x+2}{x^2-1}\]
 	\tcblower
 Una funzione ha un asintoto orizzontale  se esiste ed è finito il limite
@@ -166,6 +284,7 @@ l'asintoto è $y=3$\index{Asintoto!orizzontale}
 \[y=\dfrac{x^2+4x+3}{x^2+3x+5}\]
 \end{exercise}
 \begin{exercise}
+	Trovare gli asintoti richiesti
 	\[y=\dfrac{3x^2+1}{x^3+x^2} \]
 	\tcblower
 	\begin{align*}
@@ -177,6 +296,72 @@ l'asintoto è $y=3$\index{Asintoto!orizzontale}
 	\lim_{x\to +\infty}\dfrac{1(3+\dfrac{1}{x^2})}{x(1+\dfrac{1}{x})}=0\cdot 3=0\\
 	\end{align*}
 	L'asintoto è $y=0$, l'asse delle $x$.
+\end{exercise}
+\section{Asintoti obliqui }
+Risolvere i seguenti esercizi
+\begin{exercise}
+	Trovare gli asintoti richiesti
+	\[y=\dfrac{2x^3+x^2+2}{x^2+1}\]
+	\tcblower
+	\begin{align*}
+	m=&\lim_{x\to +\infty}\dfrac{2x^3+x^2+2}{x^2+1}\cdot\dfrac{1}{x}\\
+	=&\lim_{x\to +\infty}\dfrac{2x^3+x^2+2}{x^3+x}\\
+	=&\lim_{x\to +\infty}\dfrac{x^3\left(2+\dfrac{1}{x}+\dfrac{2}{x^3}\right)}{x^3\left(1+\dfrac{1}{x^2}\right)}\\
+	\intertext{Dato che}
+	\dfrac{x^3}{x^3}=&1\\
+	\lim_{x\to +\infty}\dfrac{1}{x}=&0\\
+	\lim_{x\to +\infty}\dfrac{2}{x^3}=&0\\
+	\lim_{x\to +\infty}\dfrac{1}{x^2}=&0\\
+	\intertext{otteniamo}
+	m=&2\\
+	q=&\lim_{x\to +\infty}\left[\dfrac{2x^3+x^2+2}{x^2+1}-2x\right]\\
+	=&\lim_{x\to +\infty}\dfrac{2x^3+x^2+2-2x^3-2x}{x^2+1}\\
+	=&\lim_{x\to +\infty}\dfrac{x^2-2x+2}{x^2+1}\\
+	=&\lim_{x\to +\infty}\dfrac{x^2\left(1-\dfrac{2}{x}+\dfrac{2}{x^2}\right)}{x^2\left(1+\dfrac{1}{x^2}\right)}\\
+	\intertext{Dato che}
+	\dfrac{x^2}{x^2}=&1\\
+	\lim_{x\to +\infty}\dfrac{1}{x}=&0\\
+	\lim_{x\to +\infty}\dfrac{1}{x^2}=&0\\
+	\intertext{otteniamo}
+	q=&1\\
+	\intertext{Quindi l'asintoto è}
+	y=&2x+1
+	\end{align*}\index{Asintoto!obliquo}
+\end{exercise}
+\begin{exercise}[no solution]
+	
+	\begin{equation*}
+	f(x)= \frac{2x^2+1}{x-1}.
+	\end{equation*}
+\end{exercise}
+\begin{exercise}
+	Trovare gli asintoti richiesti
+	\[y=\dfrac{4x^4+1}{3x^3+1}\]
+	\tcblower
+	\begin{align*}
+	m=&\lim_{x\to +\infty}\dfrac{4x^4+1}{3x^3+1}\cdot\dfrac{1}{x}\\
+	=&\lim_{x\to +\infty}\dfrac{4x^4+1}{3x^4+x}\\
+	=&\lim_{x\to +\infty}\dfrac{x^4\left(4+\dfrac{1}{x^4}\right)}{x^4\left(3+\dfrac{1}{x^3}\right)}\\
+	\intertext{Dato che}
+	\dfrac{x^4}{x^4}=&1\\
+	\lim_{x\to +\infty}\dfrac{1}{x^3}=&0\\
+	\lim_{x\to +\infty}\dfrac{1}{x^4}=&0\\
+	\intertext{otteniamo}
+	m=&\dfrac{4}{3}\\
+	q=&\lim_{x\to +\infty}\left[\dfrac{4x^4+1}{3x^3+1}-\dfrac{4}{3}x\right]\\
+	=&\lim_{x\to +\infty}\dfrac{12x^4+3-12x^4-4x}{3x^3+1}\\
+	=&\lim_{x\to +\infty}\dfrac{-4x+3}{9x^3+3}\\
+	=&\lim_{x\to +\infty}\dfrac{x\left(-4+\dfrac{3}{x}\right)}{x^3\left(9+\dfrac{3}{x^3}\right)}\\
+	\intertext{Dato che}
+	\dfrac{x}{x^3}=&\dfrac{1}{x^2}\\
+	\lim_{x\to +\infty}\dfrac{3}{x}=&0\\
+	\lim_{x\to +\infty}\dfrac{1}{x^2}=&0\\
+	\lim_{x\to +\infty}\dfrac{3}{x^2}=&0\\
+	\intertext{otteniamo}
+	q=&0\\
+	\intertext{Quindi l'asintoto è}
+	y=&\dfrac{4}{3}x
+	\end{align*}\index{Asintoto!obliquo}
 \end{exercise}
 \tcbstoprecording
 \newpage
