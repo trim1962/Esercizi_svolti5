@@ -297,7 +297,7 @@ l'asintoto è $y=3$\index{Asintoto!orizzontale}
 	\end{align*}
 	L'asintoto è $y=0$, l'asse delle $x$.
 \end{exercise}
-\section{Asintoti obliqui }
+\section{Asintoti obliqui}
 Risolvere i seguenti esercizi
 \begin{exercise}
 	Trovare gli asintoti richiesti
@@ -363,7 +363,89 @@ Risolvere i seguenti esercizi
 	y=&\dfrac{4}{3}x
 	\end{align*}\index{Asintoto!obliquo}
 \end{exercise}
+\section{Esercizi di riepilogo asintoti}
+ 
+\begin{exercise}
+	Trovare gli asintoti della funzione $f(x)=\dfrac{x^2+2x}{x-1}$
+	\tcblower
+Iniziamo da queli verticali. Determiniamo il dominio. Dato che è una razionale fratta il dominio si ottiene ponendo il denominatore uguale a zero\[x-1=0\] $x=1$ il dominio è $\R-\lbrace1\rbrace$. Verifichiamo se $x=1$ è un asintoto verticale.
+\begin{align*}
+\lim_{x\to 1^+}\dfrac{x^2+2x}{x-1}=&\\
+\intertext{Dato che}
+(1^+)^2+2\cdot 1^+>&0\\
+1^+-1>&0\\
+\lim_{x\to 1^+}\dfrac{x^2+2x}{x-1}=&+\infty\\
+\end{align*}
+\begin{align*}
+\lim_{x\to 1^-}\dfrac{x^2+2x}{x-1}=&\\
+\intertext{Dato che}
+(1^-)^2+2\cdot 1^->&0\\
+1^--1<&0\\
+\lim_{x\to 1^-}\dfrac{x^2+2x}{x-1}=&-\infty\\
+\end{align*}
+Quindi $x=1$ è un asintoto verticale\index{Asintoto!verticale}
+Dato che il grado del numeratore supera di uno il grado del denominatore verifichiamo se esiste un asintoto obliquo. Calcoliamo il limite
+\begin{align*}
+m=\lim_{x\to +\infty}\dfrac{x^2+2x}{x-1}\cdot\dfrac{1}{x}=&\\
+=&\lim_{x\to +\infty}\dfrac{x^2+2x}{x^2-x}\\
+=&\lim_{x\to +\infty}\dfrac{x^2\left(1+\dfrac{2}{x}\right)}{x^2\left(1-\dfrac{1}{x}\right)}\\
+\intertext{Dato che}
+\dfrac{x^2}{x^2}=&1\\
+\lim_{x\to +\infty}\dfrac{1}{x}=&0\\
+\intertext{otteniamo}
+m=&1\\
+q=&\lim_{x\to +\infty}\left[\dfrac{x^2+2x}{x-1}-x\right]\\
+=&\lim_{x\to +\infty}\dfrac{x^2+2x-x^2-x}{x-1}\\
+=&\lim_{x\to +\infty}\dfrac{x}{x-1}\\
+=&\lim_{x\to +\infty}\dfrac{x}{x\left(1-\dfrac{1}{x}\right)}\\
+\intertext{Dato che}
+\dfrac{x}{x}=&1\\
+\lim_{x\to +\infty}\dfrac{1}{x}=&0\\
+\intertext{otteniamo}
+q=&1\\
+\end{align*}
+L'asintoto cercato\[y=x+1\]
+\end{exercise}
+\begin{exercise}
+	Trovare gli asintoti della funzione $f(x)=\dfrac{x^3+2}{x^3-1}$
+	\tcblower
+	Iniziamo da queli verticali. Determiniamo il dominio. Dato che è una razionale fratta il dominio si ottiene ponendo il denominatore uguale a zero\[x^3-1=0\] $x=1$ il dominio è $\R-\lbrace1\rbrace$. Verifichiamo se $x=1$ è un asintoto verticale.
+	\begin{align*}
+	\lim_{x\to 1^-}\dfrac{x^3+2}{x^3-1}=&\\
+	\intertext{Dato che}
+	(1^+)^3+2>&0\\
+	(1^+)^3-1>&0\\
+	\intertext{ottengo}
+	\lim_{x\to 1^+}\dfrac{x^3+2}{x^3-1}=&+\infty\\
+	\end{align*}
+	\begin{align*}
+	\lim_{x\to 1^-}\dfrac{x^3+2}{x^3-1}=&\\
+		\intertext{Dato che}
+	(1^-)^3+2>&0\\
+	(1^-)^3-1<&0\\
+	\intertext{ottengo}
+	\lim_{x\to 1^-}\dfrac{x^2+2x}{x-1}=&-\infty\\
+	\end{align*}
+	Quindi $x=1$ è un asintoto verticale\index{Asintoto!verticale}
+	Dato che il grado del numeratore e uguale al grado del denominatore verifichiamo se esiste un asintoto orizzontale. Calcoliamo il limite
+	\begin{align*}
+	\lim_{x\to +\infty}\dfrac{x^3+2}{x^3-1}=&\\
+	\lim_{x\to +\infty}\dfrac{x^3\left(1+\dfrac{2}{x^3}\right)}{x^3\left(1-\dfrac{1}{x^3}\right)}=&\\
+	\intertext{Dato che}
+	\dfrac{x^3}{x^3}=&1\\
+	\lim_{x\to +\infty}\dfrac{1}{x^3}=&0\\
+	\intertext{otteniamo}
+	\lim_{x\to +\infty}\dfrac{x^3+2}{x^3-1}=&1\\
+	\end{align*}
+	L'asintoto cercato\[y=1\]\index{Asintoto!orizzontale}
+\end{exercise}
+\begin{exercise}[no solution]
+	Trovare gli asintoti della funzione
+	\begin{equation*}
+	f(x)=\dfrac{1}{x+1}.
+	\end{equation*}
+\end{exercise}
 \tcbstoprecording
 \newpage
-\section{Soluzioni asintoti}
+\section{Soluzione esercizi}
 \tcbinputrecords

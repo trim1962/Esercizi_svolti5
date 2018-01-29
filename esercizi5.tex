@@ -14,7 +14,11 @@
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/utili}
 \input{../Mod_base/stand_class}
+\usepackage[toc,page]{appendix}
 
+\renewcommand{\appendixtocname}{Appendice}
+
+\renewcommand{\appendixpagename}{Appendice}
 
 %per le semplificazioni
 \usepackage{cancel}
@@ -67,7 +71,7 @@
 	pdfcontactcity={Perugia},
 	pdfcontactaddress={},
 	pdfcaptionwriter={Claudio Duchi},
-	pdfauthortitle={},%
+	pdfauthortitle={},
 	pdfauthor={Claudio Duchi},
 	linkcolor={blue},
 	colorlinks=true,
@@ -79,6 +83,7 @@
 }
 \usepackage{tkz-berge}
 \listfiles
+\input{compilaTexStudio}
 \begin{document}
 \frontmatter
 		\begin{titlepage}
@@ -102,12 +107,11 @@
 \setcounter{page}{2}
 \input{../Mod_base/copyright}
 \tableofcontents 
-
 \mainmatter%
-
-\input{quinto/quinto}
-
-\input{../Mod_base/MezziUsati}
+\input{compilaTexStudioDue}
+\begin{appendices}
+	\input{../Mod_base/MezziUsati}
+\end{appendices}
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex
 \end{document}
