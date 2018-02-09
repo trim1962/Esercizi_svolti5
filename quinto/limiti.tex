@@ -1,11 +1,8 @@
 \chapter{Limiti}
 \section{Limite infinito per x che tende a valore finito}
-Risolvi i seguenti limiti
 \tcbstartrecording
 %\begin{exercise}
-
 %	\tcblower
-
 %\end{exercise}
 	%\begin{exercise}[no solution]
 %	It holds:
@@ -14,15 +11,17 @@ Risolvi i seguenti limiti
 %	\end{equation*}
 %\end{exercise}
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to 2^+}\dfrac{1}{x-2}
-\end{equation*}
+Calcoliamo il seguente limite
+$\lim_{x\to 2^+}\dfrac{1}{x-2}$
 	\tcblower
-Sostituendo due al denominatore otteniamo uno diviso zero. Possiamo risolvere l'esercizio in due modi. Primo metodo intuitivo, se sostituisco nel denominatore valori leggermente superiori al due la differenza è positiva quindi \begin{equation*}
+Calcoliamo il seguente limite
+$\lim_{x\to 2^+}\dfrac{1}{x-2}$
+	
+Sostituendo due al denominatore otteniamo uno diviso zero. Possiamo risolvere l'esercizio in due modi. Primo metodo intuitivo, se sostituiamo all'incognita nel denominatore, valori leggermente superiori al due la differenza è positiva quindi \begin{equation*}
 \lim_{x\to 2^+}\dfrac{1}{x-2}=+\infty
-\end{equation*} Secondo metodo analitico. Studio con una disequazione il segno della frazione
+\end{equation*} Secondo metodo analitico. Studiamo, con una disequazione, il segno della frazione
 \[x-2>0 \] 
-ottengo il grafico
+otteniamo il grafico
 \begin{center}
 	\includestandalone{quinto/grafici/disprimogrado}
 \end{center}\index{Limite!infinito!tende finito}
@@ -32,20 +31,21 @@ Quindi la frazione è positiva per valori a destra del due. Segue che
 \end{equation*}
 \end{exercise}
 \begin{exercise}
-	\begin{equation*}
-	\lim_{x\to -5^-}\dfrac{x-3}{x+5}
-	\end{equation*}
+Calcoliamo il limite 
+	$\lim_{x\to -5^-}\dfrac{x-3}{x+5}$
 	\tcblower
-	Sostituendo meno cinque al denominatore otteniamo meno otto diviso zero. Possiamo risolvere l'esercizio in due modi. Primo metodo intuitivo, sostituendo meno cinque all'incognita  nel numeratore otteniamo un valore negativo. Procedendo in modo analogo al denominatore otteniamo un valore negativo (attenzione che consideriamo valori a sinistra di meno cinque). Quindi in numeratore e il denominatore sono entrambi negativi per cui la frazione a sinistra è positiva. Segue \begin{equation*}
+	Calcoliamo il limite 
+	$\lim_{x\to -5^-}\dfrac{x-3}{x+5}$
+	Sostituendo meno cinque al denominatore otteniamo meno otto diviso zero. Possiamo risolvere l'esercizio in due modi. Primo metodo intuitivo, sostituendo meno cinque all'incognita nel numeratore otteniamo un valore negativo. Procedendo in modo analogo al denominatore otteniamo un valore negativo (attenzione che consideriamo valori a sinistra di meno cinque). Quindi in numeratore e il denominatore sono entrambi negativi per cui la frazione a sinistra è positiva. Segue \begin{equation*}
 	\lim_{x\to -5^-}\dfrac{x-3}{x+5}=+\infty
-	\end{equation*} Secondo metodo analitico. Studio con una disequazione il segno della frazione
+	\end{equation*} Secondo metodo analitico. Studiamo, con una disequazione, il segno della frazione
 	\begin{align*}
 	x-3>&0\\
 	x>&3\\
 	x+5>&0\\
 	x>&-5
 	\end{align*} 
-	ottengo il grafico
+	otteniamo il grafico
 	\begin{center}
 		\includestandalone{quinto/grafici/disprimogradodue}
 	\end{center}\index{Limite!infinito!tende finito}
@@ -55,49 +55,45 @@ Quindi la frazione è positiva per valori a destra del due. Segue che
 	\end{equation*}
 \end{exercise}
 	\begin{exercise}[no solution]
-	\begin{equation*}
-	\lim_{x\to -3}\dfrac{2}{(x+3)^2}
-	\end{equation*}
-\end{exercise}
-	\begin{exercise}[no solution]
-	\begin{equation*}
-	\lim_{x\to -2}\dfrac{2x}{(x+2)^2}
-	\end{equation*}
-\end{exercise}
-	\begin{exercise}[no solution]
-	\begin{equation*}
-	\lim_{x\to 0^-}\left(\dfrac{1}{x^3}+x\right)
-	\end{equation*}
-\end{exercise}
+Calcoliamo il limite
+	$\lim_{x\to -3}\dfrac{2}{(x+3)^2}$
 
+\end{exercise}
+	\begin{exercise}[no solution]
+Calcoliamo il limite
+	$\lim_{x\to -2}\dfrac{2x}{(x+2)^2}$
+\end{exercise}
+	\begin{exercise}[no solution]
+	Calcoliamo il limite
+	$\lim_{x\to 0^-}\left(\dfrac{1}{x^3}+x\right)$
+\end{exercise}
 \section{Limite infinito per x che tende ad infinito}
-Risolvere i seguenti limiti
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to +\infty}3x^3-x^2-x-1
-\end{equation*}
+Calcoliamo il limite 
+$\lim_{x\to +\infty}3x^3-x^2-x-1$
 	\tcblower
-Per valori di $x$ che tende all'infinito le varie parti del polinomio tendono a più o meno infinito. Per ovviare a questa contraddizione si procede come segue.
+	Calcoliamo il limite 
+	$\lim_{x\to +\infty}3x^3-x^2-x-1$
+Per valori di $x$ che tendono all'infinito le varie parti del polinomio tendono a più o meno infinito. Per ovviare a questa contraddizione procediamo come segue:
 \begin{align*}
 \lim_{x\to +\infty}3x^3-x^2-x-1=&\\
 &=\lim_{x\to +\infty} x^3\left(3-\dfrac{x^2}{x^3}-\dfrac{x}{x^3}-\dfrac{1}{x^3}\right)\\
 &=\lim_{x\to +\infty} x^3\left(3-\dfrac{1}{x}-\dfrac{1}{x^2}-\dfrac{1}{x^3}\right)
-\intertext{i termini all'interno della parentezi tendono a tre ora mentre il termine all'esterno tende a più infinito quindi}
+\intertext{i termini all'interno della parentesi tendono a tre mentre il termine all'esterno tende a più infinito quindi}
 =&+\infty
 \end{align*}\index{Limite!infinito!tende infinito}
 \end{exercise}
 	\begin{exercise}[no solution]
-	\begin{equation*}
-	\lim_{x\to +\infty}3x^5+x^2-x+8
-	\end{equation*}
+Calcoliamo il limite
+$\lim_{x\to +\infty}3x^5+x^2-x+8$
 \end{exercise}
 \section{Forma indeterminata zero su zero}
-Risolvere i seguenti limiti
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to 1}\dfrac{x^2-1}{x-1}
-\end{equation*}
+Calcoliamo il limite
+$\lim_{x\to 1}\dfrac{x^2-1}{x-1}$
 	\tcblower
+Calcoliamo il limite
+$\lim_{x\to 1}\dfrac{x^2-1}{x-1}$	
 \begin{align*}
 \lim_{x\to 1}\dfrac{x^2-1}{x-1}=&\\
 &=\lim_{x\to 1}\dfrac{(x-1)(x+1)}{x-1}
@@ -107,14 +103,15 @@ Risolvere i seguenti limiti
 \end{align*}
 \end{exercise}
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to -2}\dfrac{2x^2+x-6}{4x^2+9x+2}
-\end{equation*}
+Calcoliamo il limite
+$\lim_{x\to -2}\dfrac{2x^2+x-6}{4x^2+9x+2}$
 	\tcblower
-\begin{equation*}
+	Calcoliamo il limite
+	$\lim_{x\to -2}\dfrac{2x^2+x-6}{4x^2+9x+2}$
+	\begin{equation*}
 \lim_{x\to -2}\dfrac{2x^2+x-6}{4x^2+9x+2}=\dfrac{0}{0}
 \end{equation*}
-Per risolvere questa forma indeterminata scompongo
+Per risolvere questa forma indeterminata scomponiamo
 il numeratore
 \begin{align*}
 2x^2+x-6=&0\\
@@ -125,10 +122,8 @@ x_1=-2\\
 x_2=\dfrac{3}{2}
 \end{cases}\\
 2x^2+x-6=&2(x-\dfrac{3}{2})(x+2)
-\end{align*}
-scompongo
-il denominatore
-\begin{align*}
+\intertext{scomponiamo
+il denominatore}
 4x^2+9x+2=&0\\
 x_{1,2}=&\dfrac{-9\pm\sqrt{81-32}}{8}\\
 =&\dfrac{-9\pm 7}{8}\\
@@ -137,29 +132,28 @@ x_1=-2\\
 x_2=-\dfrac{1}{4}
 \end{cases}\\
 4x^2+9x+2=&4(x+\dfrac{1}{4})(x+2)
-\end{align*}
-quindi
-\begin{align*}
+\intertext{quindi}
 \lim_{x\to -2}\dfrac{2x^2+x-6}{4x^2+9x+2}=&\\
 =&\lim_{x\to -2}\dfrac{2(x-\dfrac{3}{2})(x+2)}{4(x+\dfrac{1}{4})(x+2)}
 \intertext{semplificando}
 =&\lim_{x\to -2}\dfrac{2(x-\dfrac{3}{2})}{4(x+\dfrac{1}{4})}\\
 =&\lim_{x\to -2}\dfrac{2x+3}{4x+1}\\
-=\dfrac{5}{7}
+=&\dfrac{5}{7}
 \end{align*}
 \end{exercise}
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to 1}\dfrac{2x^2+x-3}{x^2-x}
-\end{equation*}
+Calcoliamo il limite
+$\lim_{x\to 1}\dfrac{2x^2+x-3}{x^2-x}$
 	\tcblower
+	Calcoliamo il limite
+	$\lim_{x\to 1}\dfrac{2x^2+x-3}{x^2-x}$
 \begin{equation*}
 \lim_{x\to 1}\dfrac{2x^2+x-3}{x^2-x}=\dfrac{0}{0}
 \end{equation*}
-Per risolvere questa forma indeterminata scompongo
+Per risolvere questa forma indeterminata scomponiamo
 il numeratore
 \begin{align*}
-2x^2+x-3=&0\\
+2x^2+x-3=&0\\ 
 x_{1,2}=&\dfrac{-1\pm\sqrt{1+24}}{4}\\
 =&\dfrac{1\pm 5}{4}\\
 =&\begin{cases}
@@ -167,10 +161,7 @@ x_1=1\\
 x_2=-\dfrac{3}{2}
 \end{cases}\\
 2x^2+x-3=&2(x+\dfrac{3}{2})(x-1)
-\end{align*}
-scompongo
-il denominatore
-\begin{align*}
+\intertext{scomponiamo il denominatore}
 x^2-x=&0\\
 x_{1,2}=&\dfrac{1\pm\sqrt{1}}{2}\\
 =&\dfrac{1\pm 1}{2}\\
@@ -179,29 +170,26 @@ x_1=0\\
 x_2=1
 \end{cases}\\
 x^2-x=&x(x-1)
-\end{align*}
-quindi
-\begin{align*}
+\intertext{quindi}
 \lim_{x\to 1}\dfrac{2x^2+x-3}{x^2-x}=&\\
 =&\lim_{x\to 1}\dfrac{2(x+\dfrac{3}{2})(x-1)}{x(x-1)}
 \intertext{semplificando}
 =&\lim_{x\to 1}\dfrac{2(x+\dfrac{3}{2})}{x}\\
 =&\lim_{x\to 1}\dfrac{2x+3}{x}\\
-=5
+=&5
 \end{align*}
 \end{exercise}
 	\begin{exercise}[no solution]
-	\begin{equation*}
-	\lim_{x\to 1}\dfrac{2x^2+5x-6}{x^2+x-2}
-	\end{equation*}
+	Calcoliamo il limite
+	$\lim_{x\to 1}\dfrac{2x^2+5x-6}{x^2+x-2}$
 \end{exercise}
 \section{Forma indeterminata infinito su infinito}
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to +\infty}\dfrac{2x-3}{1-5x}
-\end{equation*}
+Calcoliamo il limite
+$\lim_{x\to +\infty}\dfrac{2x-3}{1-5x}$
 	\tcblower
-	Limite del tipo infinito su infinito, si procede riscrivendo la frazione 
+	Calcoliamo il limite
+	$\lim_{x\to +\infty}\dfrac{2x-3}{1-5x}$ Limite del tipo infinito su infinito, procediamo riscrivendo la frazione 
 	\begin{align*}
 \lim_{x\to +\infty}\dfrac{2x-3}{1-5x}=&\\
 &=\lim_{x\to +\infty}\dfrac{x\left(2-\dfrac{3}{x}\right)}{x\left(\dfrac{1}{x}-5\right)}
@@ -211,11 +199,11 @@ quindi
 	\end{align*}
 \end{exercise}
 \begin{exercise}
-	\begin{equation*}
-	\lim_{x\to +\infty}\dfrac{x^2-3x+4}{x^2+x-6}
-	\end{equation*}
+Calcoliamo il limite
+	$\lim_{x\to +\infty}\dfrac{x^2-3x+4}{x^2+x-6}$
 	\tcblower
-	Limite del tipo infinito su infinito, si procede riscrivendo la frazione 
+	Calcoliamo il limite
+	$\lim_{x\to +\infty}\dfrac{x^2-3x+4}{x^2+x-6}$ Limite del tipo infinito su infinito, procediamo riscrivendo la frazione 
 	\begin{align*}
 	\lim_{x\to +\infty}\dfrac{x^2-3x+4}{x^2+x-6}=&\\
 	&=\lim_{x\to +\infty}\dfrac{x^2\left(1-\dfrac{3x}{x^2}+\dfrac{4}{x^2}\right)}{x^2\left(1+\dfrac{x}{x^2}-\dfrac{6}{x^2}\right)}
@@ -225,11 +213,11 @@ quindi
 	\end{align*}
 \end{exercise}
 \begin{exercise}
-\begin{equation*}
-\lim_{x\to +\infty}\dfrac{x^2-x+1}{x^4-3x+4}
-\end{equation*}
+Calcoliamo il limite 
+$\lim_{x\to +\infty}\dfrac{x^2-x+1}{x^4-3x+4}$
 \tcblower
-Limite del tipo infinito su infinito, si procede riscrivendo la frazione 
+Calcoliamo il limite 
+$\lim_{x\to +\infty}\dfrac{x^2-x+1}{x^4-3x+4}$ Limite del tipo infinito su infinito, procediamo riscrivendo la frazione 
 \begin{align*}
 \lim_{x\to +\infty}\dfrac{x^2-x+1}{x^4-3x+4}=&\\
 &=\lim_{x\to +\infty}\dfrac{x^2\left(1-\dfrac{x}{x^2}+\dfrac{1}{x^2}\right)}{x^4\left(1-\dfrac{3x}{x^4}+\dfrac{4}{x^4}\right)}
@@ -239,11 +227,11 @@ Limite del tipo infinito su infinito, si procede riscrivendo la frazione
 \end{align*}
 \end{exercise}
 \begin{exercise}
-	\begin{equation*}
-	\lim_{x\to +\infty}\dfrac{x^5-3x+1}{2x+1}
-	\end{equation*}
+Calcoliamo il limite 
+	$\lim_{x\to +\infty}\dfrac{x^5-3x+1}{2x+1}$
 	\tcblower
-	Limite del tipo infinito su infinito, si procede riscrivendo la frazione 
+	Calcoliamo il limite 
+	$\lim_{x\to +\infty}\dfrac{x^5-3x+1}{2x+1}$ Limite del tipo infinito su infinito, procediamo riscrivendo la frazione 
 	\begin{align*}
 	\lim_{x\to +\infty}\dfrac{x^5-3x+1}{2x+1}=&\\
 	&=\lim_{x\to +\infty}\dfrac{x^5\left(1-\dfrac{3x}{x^5}+\dfrac{1}{x^5}\right)}{x\left(2+\dfrac{1}{x}\right)}
@@ -254,6 +242,6 @@ Limite del tipo infinito su infinito, si procede riscrivendo la frazione
 \end{exercise}
 \tcbstoprecording
 \newpage
-\section{Soluzioni limiti}
+\section{Soluzione esercizi}
 \tcbinputrecords
 \newpage
