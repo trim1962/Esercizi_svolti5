@@ -95,13 +95,18 @@
 {\LARGE \textsc{	QUINTO}}
 		\HRule \\[1.5cm]
 		\vfill
-	\end{center}
-	\begin{center}
+%	\end{center}
+%	\begin{center}
 		\begin{tikzpicture}
 		\renewcommand*{\VertexBallColor}{green!50!black}
 		\GraphInit[vstyle=Art]
 		\grComplete[RA=5]{12}
 		\end{tikzpicture}
+		
+			{\centering
+			Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+			\gitCommitterDate \\
+		}
 	\end{center}
 \end{titlepage}
 \setcounter{page}{2}
