@@ -5,7 +5,34 @@ Risolvi i seguenti esercizi
 %\begin{exercise}
 
 %	\tcblower
-
+%	\begin{itemize}
+%	\litem {Dominio}
+%	
+%	\litem{Positività}
+%	
+%	Otteniamo il grafico:
+%	
+%	\litem{Asintoti}
+%	\begin{enumerate}
+%		\item Asintoti verticali
+%		
+%		Utilizzando il grafico precedente
+%		
+%		\item Asintoto orizzontale 
+%		
+%		\item Asintoto obliquo
+%		
+%	\end{enumerate}
+%	\litem{Intersezioni}
+%	\begin{enumerate}
+%		\item Asse $x$
+%		\item asse $y$
+%		
+%		\item Asintoti
+%		
+%	\end{enumerate}
+%	\litem{Grafico probabile}
+%\end{itemize}
 %\end{exercise}
 %\begin{exercise}[no solution]
 %	It holds:
@@ -16,6 +43,195 @@ Risolvi i seguenti esercizi
 \begin{exercise}[no solution]
 Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 \end{exercise}
+\begin{exercise}
+	Trovare il grafico probabile della funzione $y=\dfrac{x^2-1}{x+5}$ 
+	\tcblower
+	Trovare il grafico probabile della funzione $y=\dfrac{x^2-1}{x+5}$ 
+	\begin{itemize}
+		\litem {Dominio}
+		\begin{align*}
+		x+5=&0\\
+		x=&-5\\
+		x\neq&-5	
+		\end{align*}
+		\litem{Positività}
+		\begin{align*}
+	\dfrac{x^2-1}{x+5}\geq&0\\
+	x+5>&0\\
+	x>&-5\\
+	x^2-1\geq&0\\
+	x^2-1=&0\\
+	x_{1,2}=&\dfrac{\pm\sqrt{4}}{2}\\
+	=&\begin{cases}
+	x_1=+1\\
+	x_2=-1
+	\end{cases}
+		\end{align*}
+		Otteniamo il grafico:
+		\begin{center}
+			\includestandalone{quinto/grafici/dissecondoprimo}
+		\end{center}
+		\litem{Asintoti}
+		\begin{enumerate}
+			\item Asintoti verticali
+			
+	Utilizzando il grafico precedente
+	\begin{align*}
+	\lim_{x\to -5^-}\dfrac{x^2-1}{x+5}=&-\infty\\
+	\lim_{x\to -5^+}\dfrac{x^2-1}{x+5}=&+\infty\\
+	x=&-5\\
+	\intertext{è asintoto verticale}
+	\end{align*}
+			\item Asintoto orizzontale 
+			
+			Dato che il grado del  numeratore è maggiore del grado denominatore l'asintoto non esiste.
+			\item Asintoto obliquo
+			\begin{align*}
+			m=&\lim_{x\to \infty}\dfrac{x^2-1}{x+5}\dfrac{1}{x}\\
+			=&\lim_{x\to \infty}\dfrac{x^2-1}{x^2+5x}\\
+			=&\lim_{x\to \infty}\dfrac{x^2\left(1-\dfrac{1}{x^2}\right)}{x^2\left(1+\dfrac{5x}{x^2}\right)}=1\\
+			q=&\lim_{x\to \infty}[\dfrac{x^2-1}{x+5}-x]\\
+			=&\lim_{x\to \infty}\dfrac{x^2-1-x^2-5x}{x+5}\\
+			=&\lim_{x\to \infty}\dfrac{-5x-1}{x+5}\\
+			=&\lim_{x\to \infty}\dfrac{x\left(-5-\dfrac{1}{x}\right)}{x\left(1+\dfrac{5}{x}\right)}=-5\\
+			y=&x-5
+			\end{align*}
+		\end{enumerate}
+	\litem{Intersezioni}
+	\begin{enumerate}
+		\item Asse $x$
+	\begin{align*}
+		&\begin{cases}
+	y=\dfrac{x^2-1}{x+5}\\
+	y=0\\
+	\end{cases}&
+		&\begin{cases}
+	x^2-1=0\\
+	y=0\\
+	\end{cases}\\
+		&\begin{cases}
+	x_1=+1\\
+	y=0
+	\end{cases}&
+		&\begin{cases}
+	x_2=-1\\
+	y=0
+	\end{cases}&
+	\end{align*}
+		\item asse $y$
+			\begin{align*}
+		&\begin{cases}
+		y=\dfrac{x^2-1}{x+5}\\
+		x=0\\
+		\end{cases}&
+		&\begin{cases}
+		y=-\dfrac{1}{5}\\
+		x=0\\
+		\end{cases}
+		\end{align*}
+		\item Asintoti
+		\begin{align*}
+		&\begin{cases}
+	y=\dfrac{x^2-1}{x+5}\\
+	y=x-5\\
+	\end{cases}&&\begin{cases}
+	\dfrac{x^2-1}{x+5}=x-5\\
+	y=x-5\\
+	\end{cases}\\
+	&\begin{cases}
+	x^2-1=x^2-25\\
+	y=x-5
+	\end{cases}
+		\end{align*}
+		non ha soluzione 
+	\end{enumerate}
+\litem{Grafico probabile}
+	\end{itemize}
+	\begin{center}
+		\includestandalone[width=0.6\textwidth]{quinto/grafici/graficoprobabile1}
+	\end{center}
+\end{exercise}
+\begin{exercise}
+Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-6x+8}{x^2-x}$
+	\tcblower
+Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-6x+8}{x^2-x}$
+	\begin{itemize}
+	\litem {Dominio}
+	\begin{align*}
+x^2-x=&0\\
+X_{1,2}=\dfrac{1\pm\sqrt{1}}{2}\\
+&\begin{cases}
+x_1=0\\
+x_2=1
+\end{cases}\\
+x&\neq 0\\
+x&\neq 1
+	\end{align*}
+	\litem{Positività}
+	\begin{align*}
+	\dfrac{x^2-6x+8}{x^2-x}\geq&0\\
+	x^2-6x+8\geq&0\\
+	x^2-6x+8=&0\\
+	x_{1,2}=&\dfrac{6\pm\sqrt{36-32}}{2}\\
+	=&\dfrac{6\pm 2}{2}\\
+	=&\begin{cases}
+	x_1=4\\
+	x_2=2
+	\end{cases}\\
+	x^2-x>&0\\
+	x^2-x=&0\\
+	&\begin{cases}
+	x_1=0\\
+	x_2=1
+	\end{cases}\\
+	\end{align*}
+	
+	Otteniamo il grafico:
+	\begin{center}
+		\includestandalone{quinto/grafici/sgsg}
+	\end{center}
+	\litem{Asintoti}
+	\begin{enumerate}
+		\item Asintoti verticali
+		\begin{align*}
+		\lim_{x\to 0^+}\dfrac{x^2-6x+8}{x^2-x}=&-\infty\\
+		\lim_{x\to 0^-}\dfrac{x^2-6x+8}{x^2-x}=&+\infty\\
+		x=&0\\
+		\intertext{è asintoto verticale}
+		\lim_{x\to 1^+}\dfrac{x^2-6x+8}{x^2-x}=&+\infty\\
+		\lim_{x\to 1^-}\dfrac{x^2-6x+8}{x^2-x}=&-\infty\\
+		x=&1\\
+		\intertext{è asintoto verticale}
+		\end{align*}
+		Utilizzando il grafico precedente
+		
+		\item Asintoto orizzontale 
+		\begin{align*}
+	\lim_{x\to \infty}\dfrac{x^2-6x+8}{x^2-x}=&\\
+	\lim_{x\to \infty}\dfrac{x^2\left(1-\dfrac{6x}{x^2}+\dfrac{8}{x^2}\right)}{x^2\left(1-\dfrac{x}{x^2}\right)}=&1\\
+	y=&1\\
+	\intertext{asintoto orizzontale}
+		\end{align*}
+		\item Asintoto obliquo
+		
+		Non esistono asintoti obliqui
+	\end{enumerate}
+	\litem{Intersezioni}
+	\begin{enumerate}
+		\item Asse $x$
+		\item asse $y$
+		
+		\item Asintoti
+		
+	\end{enumerate}
+	\litem{Grafico probabile}
+\end{itemize}
+\end{exercise}
+
+
+
+
+
 \tcbstoprecording
 \newpage
 \section{Soluzione esercizi}

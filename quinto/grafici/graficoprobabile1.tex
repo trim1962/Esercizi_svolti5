@@ -1,0 +1,25 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%\draw [color=black,, xstep=10.0cm,ystep=10.0cm] (-20.,-30.) grid (20.,25.);
+\draw[->,color=black] (-20.,0.) -- (20.,0.);
+\foreach \x in {-20.,-10.,10.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-30.) -- (0.,25.);
+\foreach \y in {-30.,-20.,-10.,10.,20.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-20.,-30.) rectangle (20.,25.);
+\draw [domain=-20.:20.] plot(\x,{(-5.--1.*\x)/1.});
+\draw[color=black,smooth,samples=200,domain=-20.0:20.0] plot(\x,{((\x)^(2.0)-1.0)/((\x)+5.0)});
+\draw  (-5.,-30.) -- (-5.,25.);
+\end{tikzpicture}
+\end{document}

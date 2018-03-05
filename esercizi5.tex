@@ -21,10 +21,10 @@
 \renewcommand{\appendixpagename}{Appendice}
 
 %per le semplificazioni
-\usepackage{cancel}
+% 5/03/2018 :: 16:54:41 :: \usepackage{cancel}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
- \usepackage{placeins} 
+ % 5/03/2018 :: 16:55:46 :: \usepackage{placeins} 
 
 \makeatletter
 \renewcommand\frontmatter{%
@@ -35,7 +35,8 @@
 	\cleardoublepage
 	\@mainmattertrue}
 \makeatother
-
+\usepackage{enumitem}
+\newcommand\litem[1]{\item{\bfseries #1,\enspace}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%lunghezza arrotondamenti%%%%%
