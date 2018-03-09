@@ -1,0 +1,25 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+
+\draw[->] (-10.,0.) -- (10.,0.);
+\foreach \x in {-10.,-8.,-6.,-4.,-2.,2.,4.,6.,8.}
+\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->] (0.,-2.) -- (0.,10.);
+\foreach \y in {-2.,2.,4.,6.,8.}
+\draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-10.,-2.0) rectangle (10.,10.);
+\draw[smooth,samples=200,domain=-10.0:10.0] plot(\x,{((\x)^(2.0)-6.0*(\x)+8.0)/((\x)^(2.0)-(\x))});
+\draw [domain=-10.:10.] plot(\x,{(--1.-0.*\x)/1.});
+\draw (1.,-2.) -- (1.,10.);
+
+\end{tikzpicture}
+\end{document}

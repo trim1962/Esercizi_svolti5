@@ -1,7 +1,7 @@
 \chapter{Grafico probabile}
 \section{Funzioni razionali fratte}
 Risolvi i seguenti esercizi
-\tcbstartrecording
+%\tcbstartrecording
 %\begin{exercise}
 
 %	\tcblower
@@ -108,7 +108,7 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 		&\begin{cases}
 	x^2-1=0\\
 	y=0\\
-	\end{cases}\\
+	\end{cases}
 		&\begin{cases}
 	x_1=+1\\
 	y=0
@@ -137,7 +137,7 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 	\end{cases}&&\begin{cases}
 	\dfrac{x^2-1}{x+5}=x-5\\
 	y=x-5\\
-	\end{cases}\\
+	\end{cases}
 	&\begin{cases}
 	x^2-1=x^2-25\\
 	y=x-5
@@ -159,8 +159,8 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-6x+8}{x^2-x}$
 	\litem {Dominio}
 	\begin{align*}
 x^2-x=&0\\
-X_{1,2}=\dfrac{1\pm\sqrt{1}}{2}\\
-&\begin{cases}
+X_{1,2}=\dfrac{1\pm\sqrt{1}}{2}
+=\begin{cases}
 x_1=0\\
 x_2=1
 \end{cases}\\
@@ -173,8 +173,8 @@ x&\neq 1
 	x^2-6x+8\geq&0\\
 	x^2-6x+8=&0\\
 	x_{1,2}=&\dfrac{6\pm\sqrt{36-32}}{2}\\
-	=&\dfrac{6\pm 2}{2}\\
-	=&\begin{cases}
+	=&\dfrac{6\pm 2}{2}
+	=\begin{cases}
 	x_1=4\\
 	x_2=2
 	\end{cases}\\
@@ -193,6 +193,8 @@ x&\neq 1
 	\litem{Asintoti}
 	\begin{enumerate}
 		\item Asintoti verticali
+		
+		Utilizzando il grafico precedente
 		\begin{align*}
 		\lim_{x\to 0^+}\dfrac{x^2-6x+8}{x^2-x}=&-\infty\\
 		\lim_{x\to 0^-}\dfrac{x^2-6x+8}{x^2-x}=&+\infty\\
@@ -203,9 +205,7 @@ x&\neq 1
 		x=&1\\
 		\intertext{è asintoto verticale}
 		\end{align*}
-		Utilizzando il grafico precedente
-		
-		\item Asintoto orizzontale 
+	\item Asintoto orizzontale 
 		\begin{align*}
 	\lim_{x\to \infty}\dfrac{x^2-6x+8}{x^2-x}=&\\
 	\lim_{x\to \infty}\dfrac{x^2\left(1-\dfrac{6x}{x^2}+\dfrac{8}{x^2}\right)}{x^2\left(1-\dfrac{x}{x^2}\right)}=&1\\
@@ -219,10 +219,161 @@ x&\neq 1
 	\litem{Intersezioni}
 	\begin{enumerate}
 		\item Asse $x$
+		\begin{align*}
+		&\begin{cases}
+		y=0\\
+		y=\dfrac{x^2-6x+8}{x^2-x}\\
+		\end{cases}
+		&&\begin{cases}
+		y=0\\
+		x^2-6x+8=0\\
+		\end{cases}
+		&\begin{cases}
+		y=0\\
+		x_1=2
+		\end{cases}&
+			&\begin{cases}
+		y=0\\
+		x_1=4
+		\end{cases}
+		\end{align*}
 		\item asse $y$
-		
+	Dato il dominio non esistono intersezioni con l'asse $y$
 		\item Asintoti
+		\begin{align*}
+			&\begin{cases}
+		y=1\\
+		y=\dfrac{x^2-6x+8}{x^2-x}\\
+		\end{cases}
+		&&\begin{cases}
+		y=1\\
+		\dfrac{x^2-6x+8}{x^2-x}=1\\
+		\end{cases}\\
+		&\begin{cases}
+	y=1\\
+	y=\dfrac{x^2-6x+8=x^2-x}{x^2-x}\\
+	\end{cases}
+	&&\begin{cases}
+	y=1\\
+	\dfrac{x^2-6x+8-x^2-x}{x^2-x}=0\\
+	\end{cases}\\	
+	&\begin{cases}
+	y=1\\
+	\dfrac{-7x+8}{x^2-x}=0\\
+	\end{cases}
+	&&\begin{cases}
+	y=1\\
+	-7x+8=0\\
+	\end{cases}\\
+	&\begin{cases}
+	y=1\\
+	x=\dfrac{8}{7}\\
+	\end{cases}
+\end{align*}
+	\end{enumerate}
+	\litem{Grafico probabile}
+\end{itemize}
+\begin{center}
+	\includestandalone[width=\textwidth]{quinto/grafici/graficoprobabile2}
+\end{center}
+\end{exercise}
+\begin{exercise}
+	Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-9}{x^2-4}$
+	\tcblower
+	Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-9}{x^2-4}$
+	\begin{itemize}
+	\litem {Dominio}
+	\begin{align*}
+x^2-4=&0\\
+X_{1,2}=\dfrac{\pm\sqrt{16}}{2}
+=\begin{cases}
+x_1=+2\\
+x_2=-2
+\end{cases}\\
+x&\neq+2\\
+x&\neq-2
+\end{align*}
+	\litem{Positività}
+		\begin{align*}
+	\dfrac{x^2-9}{x^2-4}\geq&0\\
+	x^2-9\geq&0\\
+	x^2-9=&0\\
+	x_{1,2}=&\dfrac{\pm\sqrt{36}}{2}\\
+	=&\dfrac{\pm 6}{2}
+	=\begin{cases}
+	x_1=+3\\
+	x_2=-3
+	\end{cases}\\
+	x^2-4>&0\\
+	x^2-4=&0\\
+	&\begin{cases}
+	x_1=+2\\
+	x_2=-2
+	\end{cases}\\
+	\end{align*}
+	Otteniamo il grafico:
+	\begin{center}
+		\includestandalone{quinto/grafici/sgsg2}
+	\end{center}
+	\litem{Asintoti}
+	\begin{enumerate}
+		\item Asintoti verticali
 		
+		Utilizzando il grafico precedente
+		\begin{align*}
+		\lim_{x\to -2^+}\dfrac{x^2-9}{x^2-4}=&+\infty\\
+		\lim_{x\to -2^-}\dfrac{x^2-9}{x^2-4}=&-\infty\\
+		x=&-2\\
+		\intertext{è asintoto verticale}
+		\lim_{x\to 2^+} \dfrac{x^2-9}{x^2-4}=&-\infty\\
+		\lim_{x\to 2^-} \dfrac{x^2-9}{x^2-4}=&+\infty\\
+		x=&+2\\
+		\intertext{è asintoto verticale}
+		\end{align*}
+		\item Asintoto orizzontale 
+			\begin{align*}
+		\lim_{x\to \infty}\dfrac{x^2-9}{x^2-4}=&\\
+		\lim_{x\to \infty}\dfrac{x^2\left(1-\dfrac{9}{x^2}\right)}{x^2\left(1-\dfrac{4}{x^2}\right)}=&1\\
+		y=&1\\
+		\intertext{asintoto orizzontale}
+		\end{align*}
+		\item Asintoto obliquo
+		
+		Non esistono asintoti obliqui
+	\end{enumerate}
+	\litem{Intersezioni}
+	\begin{enumerate}
+		\item Asse $x$
+			\begin{align*}
+		&\begin{cases}
+		y=0\\
+		y=\dfrac{x^2-9}{x^2-4}\\
+		\end{cases}
+		&&\begin{cases}
+		y=0\\
+		x^2-9=0\\
+		\end{cases}
+		&\begin{cases}
+		y=0\\
+		x_1=+3
+		\end{cases}&
+		&\begin{cases}
+		y=0\\
+		x_1=-3
+		\end{cases}
+		\end{align*}
+		\item asse $y$
+		\begin{align*}
+		&\begin{cases}
+		x=0\\
+		y=\dfrac{x^2-9}{x^2-4}
+		\end{cases}&&\begin{cases}
+		x=0\\
+		y=\dfrac{9}{4}
+		\end{cases}
+		\end{align*}
+		\item Asintoti
+		Non ha intersezione
 	\end{enumerate}
 	\litem{Grafico probabile}
 \end{itemize}
@@ -231,8 +382,7 @@ x&\neq 1
 
 
 
-
-\tcbstoprecording
-\newpage
-\section{Soluzione esercizi}
-\tcbinputrecords
+%\tcbstoprecording
+%\newpage
+%\section{Soluzione esercizi}
+%\tcbinputrecords
