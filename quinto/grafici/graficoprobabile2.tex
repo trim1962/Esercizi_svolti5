@@ -1,5 +1,6 @@
 \documentclass[10pt]{standalone}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{pgf,tikz}
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows}
@@ -9,17 +10,21 @@
 
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 
-\draw[->] (-10.,0.) -- (10.,0.);
-\foreach \x in {-10.,-8.,-6.,-4.,-2.,2.,4.,6.,8.}
-\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-\draw[->] (0.,-2.) -- (0.,10.);
-\foreach \y in {-2.,2.,4.,6.,8.}
-\draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-\draw (0pt,-10pt) node[right] {\footnotesize $0$};
-\clip(-10.,-2.0) rectangle (10.,10.);
-\draw[smooth,samples=200,domain=-10.0:10.0] plot(\x,{((\x)^(2.0)-6.0*(\x)+8.0)/((\x)^(2.0)-(\x))});
-\draw [domain=-10.:10.] plot(\x,{(--1.-0.*\x)/1.});
-\draw (1.,-2.) -- (1.,10.);
+\draw[->,color=black] (-11.,0.) -- (11.,0.);
+\foreach \x in {-10.,-8.,-6.,-4.,-2.,2.,4.,6.,8.,10.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-2.) -- (0.,13.);
+\foreach \y in {-2.,2.,4.,6.,8.,10.,12.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-11.,-2.) rectangle (11.,13.);
+\draw[color=black,smooth,samples=500,domain=-11.0:-0.1] plot(\x,{(4.0*(\x)^(2.0)+4.0*(\x)+1.0)/(\x)^(2.0)});
+\draw[color=black,smooth,samples=500,domain=0.1:11.0] plot(\x,{(4.0*(\x)^(2.0)+4.0*(\x)+1.0)/(\x)^(2.0)});
 
+\draw [domain=-11.:11.] plot(\x,{(--4.-0.*\x)/1.});
+\begin{scriptsize}
+\draw[color=black] (-10.777208175055879,3.4028822975278965) node {$f$};
+\draw[color=black] (-10.777208175055879,4.640958600213144) node {$g$};
+\end{scriptsize}
 \end{tikzpicture}
 \end{document}

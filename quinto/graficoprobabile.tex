@@ -1,7 +1,6 @@
-\chapter{Grafico probabile}
 \section{Funzioni razionali fratte}
 Risolvi i seguenti esercizi
-%\tcbstartrecording
+\tcbstartrecording
 %\begin{exercise}
 
 %	\tcblower
@@ -69,7 +68,7 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 		\end{align*}
 		Otteniamo il grafico:
 		\begin{center}
-			\includestandalone{quinto/grafici/dissecondoprimo}
+			\includestandalone{quinto/grafici/disgraficoprob1}
 		\end{center}
 		\litem{Asintoti}
 		\begin{enumerate}
@@ -145,6 +144,55 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 		\end{align*}
 		non ha soluzione 
 	\end{enumerate}
+\litem{Derivata della funzione e segno della derivata}
+\begin{align*}
+y=&\dfrac{2x+1}{3x-1}\\
+y'=&\OpD{\dfrac{2x+1}{3x-1}}\\
+=&\dfrac{2(3x-2)-3(2x+1)}{(3x-2)^2}\\
+=&\dfrac{x^2+10x+1}{(x+5)^2}
+\intertext{Studio il segno della derivata}
+y'=&\dfrac{x^2+10x+1}{(x+5)^2}\geq 0\\
+\intertext{Dato che il denominatore è un quadrato e quindi sempre positivo, studiamo solo il segno del numeratore}
+\intertext{risolvo l'equazione}
+x^2+10x+1=&0\\
+x_{1,2}=&\dfrac{-10\pm\sqrt{100-4}}{2}\\
+=&\dfrac{-10\pm\sqrt{96}}{2}\\
+=&\dfrac{-10\pm\sqrt{2^4\cdot6}}{2}\\
+=&\dfrac{-10\pm 4\sqrt{6}}{2}\\
+=&\begin{cases}
+x_1=-5+\sqrt{6}\\
+x_2=-5-\sqrt{6}
+\end{cases}
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob2}
+\end{center}
+Osservando il grafico notiamo che prima di $x=-5-\sqrt{5}$ la derivata è positiva, poi va a zero infine è negativa quindi per $x=-5-\sqrt{5}$ la funzione ha un massimo.  Per $x=-5+\sqrt{5}$ la derivata è negativa, poi va a zero infine è positiva quindi per $x=-5+\sqrt{5}$ la funzione ha un minimo.
+\litem{Flessi e concavità}
+
+Dal segno della derivata prima  vediamo che non ci sono flessi orizzontali.
+Per la concavità e gli altri flessi studiamo la derivata seconda
+\begin{align*}
+y'=&\dfrac{x^2+10x+1}{(x+5)^2}\\
+y''=&\OpD{\dfrac{x^2+10x+1}{(x+5)^2}}\\
+=&\dfrac{(2x+10)(x+5)^2-2(x^2+10x+1)(x+5)}{(x+5)^4}\\
+=&\dfrac{(2x+10)(x+5)-2(x^2+10x+1)}{(x+5)^3}\\
+=&\dfrac{2x^2+10x+10x+50-2x^2-20x-2}{(x+5)^3}\\
+=&\dfrac{48}{(x+5)^3}\\
+\intertext{Studiamo il segno della derivata}
+=&\dfrac{48}{(x+5)^3}\geq 0\\
+\intertext{il numeratore è positivo}
+\intertext{Segno denominatore}
+(x+5)^3>&0\\
+x+5>&0\\
+x>&-5\\
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob3}
+\end{center}
+Da grafico, per valori minori di meno cinque la concavità è rivolta verso il basso. Per valori superiori la funzione ha concavità rivolta vero l'alto. Per $x=-5$ non abbiamo un flesso perché la funzione non esiste.
 \litem{Grafico probabile}
 	\end{itemize}
 	\begin{center}
@@ -152,43 +200,30 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 	\end{center}
 \end{exercise}
 \begin{exercise}
-Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-6x+8}{x^2-x}$
+Disegna il grafico probabile di questa funzione $f(x)= \dfrac{4x^2+4x+1}{x^2}$
 	\tcblower
-Disegna il grafico probabile di questa funzione $f(x)= \dfrac{x^2-6x+8}{x^2-x}$
+Disegna il grafico probabile di questa funzione $f(x)= \dfrac{4x^2+4x+1}{x^2}$
 	\begin{itemize}
 	\litem {Dominio}
 	\begin{align*}
-x^2-x=&0\\
-X_{1,2}=\dfrac{1\pm\sqrt{1}}{2}
-=\begin{cases}
-x_1=0\\
-x_2=1
-\end{cases}\\
+x^2=&0\\
+x_{1,2}=0
 x&\neq 0\\
-x&\neq 1
 	\end{align*}
 	\litem{Positività}
 	\begin{align*}
-	\dfrac{x^2-6x+8}{x^2-x}\geq&0\\
-	x^2-6x+8\geq&0\\
-	x^2-6x+8=&0\\
-	x_{1,2}=&\dfrac{6\pm\sqrt{36-32}}{2}\\
-	=&\dfrac{6\pm 2}{2}
-	=\begin{cases}
-	x_1=4\\
-	x_2=2
-	\end{cases}\\
-	x^2-x>&0\\
-	x^2-x=&0\\
-	&\begin{cases}
-	x_1=0\\
-	x_2=1
-	\end{cases}\\
+	 \dfrac{4x^2+4x+1}{x^2}\geq&0\\
+	4x^2+4x+1\geq&0\\
+	4x^2+4x+1=&0\\
+	x_{1,2}=&\dfrac{-4\pm\sqrt{16-16}}{8}\\
+	=&-\dfrac{4}{8}\\
+	=&-\dfrac{1}{2}\\
+	x^2>&0\\
 	\end{align*}
 	
 	Otteniamo il grafico:
 	\begin{center}
-		\includestandalone{quinto/grafici/sgsg}
+		\includestandalone{quinto/grafici/disgraficoprob4}
 	\end{center}
 	\litem{Asintoti}
 	\begin{enumerate}
@@ -196,20 +231,16 @@ x&\neq 1
 		
 		Utilizzando il grafico precedente
 		\begin{align*}
-		\lim_{x\to 0^+}\dfrac{x^2-6x+8}{x^2-x}=&-\infty\\
-		\lim_{x\to 0^-}\dfrac{x^2-6x+8}{x^2-x}=&+\infty\\
+		\lim_{x\to 0^+}\dfrac{4x^2+4x+1}{x^2}=&+\infty\\
+		\lim_{x\to 0^-}\dfrac{4x^2+4x+1}{x^2}=&+\infty\\
 		x=&0\\
-		\intertext{è asintoto verticale}
-		\lim_{x\to 1^+}\dfrac{x^2-6x+8}{x^2-x}=&+\infty\\
-		\lim_{x\to 1^-}\dfrac{x^2-6x+8}{x^2-x}=&-\infty\\
-		x=&1\\
 		\intertext{è asintoto verticale}
 		\end{align*}
 	\item Asintoto orizzontale 
 		\begin{align*}
-	\lim_{x\to \infty}\dfrac{x^2-6x+8}{x^2-x}=&\\
-	\lim_{x\to \infty}\dfrac{x^2\left(1-\dfrac{6x}{x^2}+\dfrac{8}{x^2}\right)}{x^2\left(1-\dfrac{x}{x^2}\right)}=&1\\
-	y=&1\\
+	\lim_{x\to \infty}\dfrac{4x^2+4x+1}{x^2}=&\\
+	\lim_{x\to \infty}\dfrac{x^2\left(4-\dfrac{4x}{x^2}+\dfrac{1}{x^2}\right)}{x^2}=&4\\
+	y=&4\\
 	\intertext{asintoto orizzontale}
 		\end{align*}
 		\item Asintoto obliquo
@@ -222,19 +253,15 @@ x&\neq 1
 		\begin{align*}
 		&\begin{cases}
 		y=0\\
-		y=\dfrac{x^2-6x+8}{x^2-x}\\
+		y=\dfrac{4x^2+4x+1}{x^2}
 		\end{cases}
 		&&\begin{cases}
 		y=0\\
-		x^2-6x+8=0\\
+		4x^2+4x+1=0
 		\end{cases}
 		&\begin{cases}
 		y=0\\
-		x_1=2
-		\end{cases}&
-			&\begin{cases}
-		y=0\\
-		x_1=4
+		x_1=-\dfrac{1}{2}
 		\end{cases}
 		\end{align*}
 		\item asse $y$
@@ -242,35 +269,73 @@ x&\neq 1
 		\item Asintoti
 		\begin{align*}
 			&\begin{cases}
-		y=1\\
-		y=\dfrac{x^2-6x+8}{x^2-x}\\
+		y=-\dfrac{1}{2}\\
+		y=\dfrac{4x^2+4x+1}{x^2}
 		\end{cases}
 		&&\begin{cases}
-		y=1\\
-		\dfrac{x^2-6x+8}{x^2-x}=1\\
+		y=-\dfrac{1}{2}\\
+	\dfrac{4x^2+4x+1}{x^2}=-\dfrac{1}{2}
 		\end{cases}\\
 		&\begin{cases}
-	y=1\\
-	y=\dfrac{x^2-6x+8=x^2-x}{x^2-x}\\
+	y=-\dfrac{1}{2}\\
+	\dfrac{8x^2+8x+2+x^2}{x^2}=0
 	\end{cases}
 	&&\begin{cases}
-	y=1\\
-	\dfrac{x^2-6x+8-x^2-x}{x^2-x}=0\\
+	y=-\dfrac{1}{2}\\
+	\dfrac{9x^2+8x+2}{x^2}=0\\
 	\end{cases}\\	
 	&\begin{cases}
 	y=1\\
-	\dfrac{-7x+8}{x^2-x}=0\\
-	\end{cases}
-	&&\begin{cases}
-	y=1\\
-	-7x+8=0\\
-	\end{cases}\\
-	&\begin{cases}
-	y=1\\
-	x=\dfrac{8}{7}\\
+	x_{1,2}=\dfrac{-8\pm\sqrt{64-72}}{18}
 	\end{cases}
 \end{align*}
+Nessuna intersezione
 	\end{enumerate}
+% 10/03/2018 :: 22:00:44 :: % 10/03/2018 :: 22:00:44 :: % 10/03/2018 :: 22:00:44 :: 
+\litem{Derivata della funzione e segno della derivata}
+\begin{align*}
+y=&\dfrac{4x^2+4x+1}{x^2}\\
+y'=&\OpD{\dfrac{4x^2+4x+1}{x^2}}\\
+=&\dfrac{(8x+4)(x^2)-2x(4x^2+4x+1)}{x^4}\\
+=&\dfrac{8x^3+4x^2-8x^3-8x^2-2x}{x^4}\\
+=&\dfrac{-4x^2-2x}{x^4}\\
+=&\dfrac{-4x-2}{x^3}
+\intertext{Studio il segno della derivata}
+y'=&\dfrac{-4x-2}{x^3}\geq 0\\
+\intertext{Dato che il denominatore è una potenza dispari è positivo solo per valori di $x$ maggiori di zero, studiamo  il segno del numeratore}
+\intertext{risolvo l'equazione}
+-4x-2\geq&0\\
+x\leq&-\dfrac{1}{2}
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob7}
+\end{center}
+Osservando il grafico notiamo che prima di $x=-\dfrac{1}{2}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=-\dfrac{1}{2}$ la funzione ha un minimo.  Per $x=0$ la  derivata non esiste.
+\litem{Flessi e concavità}
+
+Dal segno della derivata prima  vediamo che non ci sono flessi orizzontali.
+Per la concavità e gli altri flessi studiamo la derivata seconda
+\begin{align*}
+y'=&\dfrac{-4x-2}{x^3}\\
+y''=&\OpD{\dfrac{-4x-2}{x^3}}\\
+=&\dfrac{-4x^3+12x^3+6x^2}{x^6}\\
+=&\dfrac{8x^3+6x^2}{x^6}\\
+=&\dfrac{8x+6}{x^4}\\
+\intertext{Studiamo il segno della derivata}
+&\dfrac{8x+6}{x^4}\geq 0\\
+\intertext{il denominatore è positivo}
+\intertext{Segno numeratore}
+8x+6\geq&0\\
+x\geq&-\dfrac{3}{4}\\
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob8}
+\end{center}
+Da grafico, per valori $x\leqslant -\dfrac{3}{4}$ la concavità è rivolta verso l'alto. Per valori superiori la funzione ha concavità rivolta vero il basso. Per $x=0$ non abbiamo un flesso perché la funzione non esiste.
+
+% 10/03/2018 :: 22:00:51 :: % 10/03/2018 :: 22:00:52 :: % 10/03/2018 :: 22:00:53 :: 
 	\litem{Grafico probabile}
 \end{itemize}
 \begin{center}
@@ -285,7 +350,7 @@ x&\neq 1
 	\litem {Dominio}
 	\begin{align*}
 x^2-4=&0\\
-X_{1,2}=\dfrac{\pm\sqrt{16}}{2}
+x_{1,2}=&\dfrac{\pm\sqrt{16}}{2}
 =\begin{cases}
 x_1=+2\\
 x_2=-2
@@ -313,7 +378,7 @@ x&\neq-2
 	\end{align*}
 	Otteniamo il grafico:
 	\begin{center}
-		\includestandalone{quinto/grafici/sgsg2}
+		\includestandalone{quinto/grafici/disgraficoprob5}
 	\end{center}
 	\litem{Asintoti}
 	\begin{enumerate}
@@ -347,11 +412,11 @@ x&\neq-2
 			\begin{align*}
 		&\begin{cases}
 		y=0\\
-		y=\dfrac{x^2-9}{x^2-4}\\
+		y=\dfrac{x^2-9}{x^2-4}
 		\end{cases}
 		&&\begin{cases}
 		y=0\\
-		x^2-9=0\\
+		x^2-9=0
 		\end{cases}
 		&\begin{cases}
 		y=0\\
@@ -375,6 +440,59 @@ x&\neq-2
 		\item Asintoti
 		Non ha intersezione
 	\end{enumerate}
+\litem{Derivata della funzione e segno della derivata}
+\begin{align*}
+y=&\dfrac{x^2-9}{x^2-4}\\
+y'=&\OpD{\dfrac{x^2-9}{x^2-4}}\\
+=&\dfrac{2x(x^2-4)-2x(x^2-9)}{(x^2-4)^2}\\
+=&\dfrac{2x^3-8x-2x^3+18x}{(x^2-4)^2}\\
+=&\dfrac{10x}{(x^2-4)^2}
+\intertext{Studio il segno della derivata}
+y'=&\dfrac{10x}{(x^2-4)^2}\geq 0\\
+\intertext{Dato che il denominatore è una potenza pari è sempre positivo, studiamo  il segno del numeratore}
+\intertext{risolvo l'equazione}
+10x\geq&0\\
+x\geq&0
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob9}
+\end{center}
+Osservando il grafico notiamo che prima di $x=0$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=$ la funzione ha un minimo.  Per $x=\pm 2$ la  derivata non esiste.
+\litem{Flessi e concavità}
+
+Dal segno della derivata prima  vediamo che non ci sono flessi orizzontali.
+Per la concavità e gli altri flessi studiamo la derivata seconda
+\begin{align*}
+y'=&\dfrac{10x}{(x^2-4)^2}\\
+y''=&\OpD{\dfrac{10x}{(x^2-4)^2}}\\
+=&\dfrac{10(x^2-4)^2-40x^2(x^2-4)}{(x^2-4)^4}\\
+=&\dfrac{10(x^2-4)(x^2-4-4x^2)}{(x^2-4)^4}\\
+=&\dfrac{10(-4-3x^2)}{(x^2-4)^3}\\
+\intertext{Studiamo il segno della derivata}
+&\dfrac{10(-4-3x^2)}{(x^2-4)^3}\geq 0\\
+\intertext{Segno denominatore. Dato che è  una potenza dispari studiamo il segno della base}
+(x^2-4)^3>&0\\
+x^2-4>&0\\
+x^2-4=&0\\
+x_{1,2}=&\dfrac{\pm\sqrt{16}}{2}
+=\begin{cases}
+x_1=+2\\
+x_2=-2
+\end{cases}\\
+\intertext{Segno numeratore}
+-4-3x^2\geq&0\\
+-4-3x^2=&0\\
+x_{1,2}=&\dfrac{\pm\sqrt{-48}}{-6}
+\intertext{Non ha soluzione}
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob10}
+\end{center}
+Da grafico, per valori di $x$ minori di meno due la concavità è rivolta verso il basso. Per valori di $x$ compresi tra meno due e due  la concavità è rivolta vero l'alto. Per $x$ maggiori di due la concavità rivolta vero il basso. 
+Per valori uguali a più e meno due la derivata non esiste.
+
 	\litem{Grafico probabile}
 \end{itemize}
 \begin{center}
@@ -382,10 +500,7 @@ x&\neq-2
 \end{center}
 \end{exercise}
 
-
-
-
-%\tcbstoprecording
-%\newpage
-%\section{Soluzione esercizi}
-%\tcbinputrecords
+\newpage
+\tcbstoprecording
+\section{Soluzione esercizi}
+\tcbinputrecords
