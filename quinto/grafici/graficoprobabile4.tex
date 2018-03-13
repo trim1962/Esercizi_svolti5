@@ -1,0 +1,23 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->] (-3.,0.) -- (5.,0.);
+\foreach \x in {-2.,2.,4.}
+\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->] (0.,-10.) -- (0.,8.);
+\foreach \y in {-10.,-8.,-6.,-4.,-2.,2.,4.,6.}
+\draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-3.,-10.) rectangle (5.,8.);
+\draw[smooth,samples=300,domain=-3.0:5.0] plot(\x,{((\x)^(2.0)-1.0)*((\x)-4.0)});
+
+\end{tikzpicture}
+\end{document}
