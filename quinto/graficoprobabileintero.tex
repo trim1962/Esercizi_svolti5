@@ -3,7 +3,7 @@
 Risolvi i seguenti esercizi
 \tcbstartrecording
 %\begin{exercise}
-
+%
 %	\tcblower
 %	\begin{itemize}
 %	\litem {Dominio}
@@ -183,6 +183,7 @@ Da grafico, per valori di $x<\dfrac{4}{3}$ la concavità è rivolta verso il bas
 	\end{center}
 \end{itemize}
 \end{exercise}
+
 \begin{exercise}
 	Disegnare il grafico probabile di questa funzione $f(x)=(x^2-1)(x^2-4)$
 	\tcblower
@@ -215,8 +216,102 @@ Da grafico, per valori di $x<\dfrac{4}{3}$ la concavità è rivolta verso il bas
 			\begin{center}
 				\includestandalone{quinto/grafici/disgraficoprob14}
 			\end{center}
-			Dal diagramma vediamo che la funzione è positiva per valori di $x$ compresi tra meno uno e più uno e per valori di $x$ maggiori di quattro $-1\leq x \leq 1$ o $x\geq 4$
-	\end{itemize}
+			Dal diagramma vediamo che la funzione è positiva quando $x\leq -2$, $-1\leq x \leq 1$ e $x\geq 2$.
+				\litem{Asintoti}
+			\begin{enumerate}
+				\item Asintoti verticali
+				
+				Visto il dominio non esistono asintoti verticali.
+				\item Asintoto orizzontale 
+				Calcoliamo il limite
+				\begin{align*}
+				\lim_{x\to +\infty}(x^2-1)(x^2-4)=&\\
+				\lim_{x\to +\infty}(x^4-4x^2-x^2+4)=&\\
+				\lim_{x\to +\infty}(x^4-5x^2+4)=&\\
+				\lim_{x\to +\infty}x^4(1-\dfrac{5x^2}{x^4}+\dfrac{4}{x^4})=&\infty\cdot 1=\infty\\
+				\end{align*}
+				Quindi non esiste asintoto orizzontale
+				\item Asintoto obliquo
+				
+				Non esiste asintoto obliquo
+			\end{enumerate}
+\litem{Intersezioni}
+\begin{enumerate}
+	\item Asse $x$
+	\begin{align*}
+	&\begin{cases}
+	y=0\\
+	y=(x^2-1)(x^2-4)
+	\end{cases}&
+	&\begin{cases}
+	y=0\\
+	(x^2-1)(x^2-4)=0
+	\end{cases}
+	&
+	&\begin{cases}
+	y=0\\
+	x^2-1=0
+	\end{cases}\\
+	&\begin{cases}
+	y=0\\
+	x_1=-1
+	\end{cases}&
+	&\begin{cases}
+	y=0\\
+	x_2=1
+	\end{cases}&&\begin{cases}
+	y=0\\
+	x^2-4=0
+	\end{cases}\\
+	&\begin{cases}
+	y=0\\
+	x_3=-2
+	\end{cases}
+		&&\begin{cases}
+	y=0\\
+	x_4=+2
+	\end{cases}\\
+	\end{align*}
+	Quindi abbiamo che la curva interseca l'asse $x$ in quattro punti
+	\item asse $y$
+	\begin{align*}
+	&\begin{cases}
+	x=0\\
+	y=(x^2-1)(x^2-4)
+	\end{cases}&
+	&\begin{cases}
+	x=0\\
+	y=(-1)(-4)=4
+	\end{cases}\\
+	\end{align*}
+	Quindi la curva incontra l'asse $y$ in un punto.	
+\end{enumerate}
+\litem{Derivata della funzione e segno della derivata}
+\begin{align*}
+y=&(x^2-1)(x^2-4)\\
+y'=&\OpD{(x^2-1)(x-4)}\\
+=&2x(x^2-4)+2x(x^2-1)\\
+=&2x^3-8x+2x^3-2x\\
+=&4^3-10x
+\intertext{Studio il segno della derivata}
+y'=&4^3-10x\geq 0
+\intertext{risolvo l'equazione}
+3x^2-8x-1=&0\\
+x_{1,2}=&\dfrac{8\pm\sqrt{64+12}}{6}\\
+=&\dfrac{8\pm\sqrt{76}}{6}\\
+=&\dfrac{8\pm\sqrt{2^2\cdot 19}}{6}\\
+=&\dfrac{8\pm 2\sqrt{19}}{6}
+=\begin{cases}
+x_1=&\dfrac{4+\sqrt{19}}{3}\\
+x_2=&\dfrac{4-\sqrt{19}}{3}
+\end{cases}\\
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob12}
+\end{center}
+Osservando il grafico notiamo che prima di $x=\dfrac{4-\sqrt{19}}{3}$ la derivata è positiva, poi va a zero infine è negativa. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un massimo.  Prima di $x=\dfrac{4+\sqrt{19}}{3}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo. 
+\end{itemize}
 \end{exercise}
 %\begin{exercise}[no solution]
 %	It holds:
