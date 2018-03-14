@@ -292,27 +292,55 @@ y=&(x^2-1)(x^2-4)\\
 y'=&\OpD{(x^2-1)(x-4)}\\
 =&2x(x^2-4)+2x(x^2-1)\\
 =&2x^3-8x+2x^3-2x\\
-=&4^3-10x
+=&4x^3-10x
 \intertext{Studio il segno della derivata}
-y'=&4^3-10x\geq 0
+y'=&4x^3-10x\geq 0
 \intertext{risolvo l'equazione}
-3x^2-8x-1=&0\\
-x_{1,2}=&\dfrac{8\pm\sqrt{64+12}}{6}\\
-=&\dfrac{8\pm\sqrt{76}}{6}\\
-=&\dfrac{8\pm\sqrt{2^2\cdot 19}}{6}\\
-=&\dfrac{8\pm 2\sqrt{19}}{6}
+2x(2x^2-5)=&0\\
+x_1=&0\\
+x\geq&0\\
+2x^2-5=&0\\
+x_{2,3}=&\pm\dfrac{\sqrt{40}}{4}\\
+=&\pm\dfrac{2\sqrt{10}}{4}
 =\begin{cases}
-x_1=&\dfrac{4+\sqrt{19}}{3}\\
-x_2=&\dfrac{4-\sqrt{19}}{3}
+x_2=&+\dfrac{\sqrt{10}}{2}\\
+x_3=&-\dfrac{\sqrt{10}}{2}
 \end{cases}\\
 \end{align*}
 Otteniamo il grafico:
 \begin{center}
-	\includestandalone{quinto/grafici/disgraficoprob12}
+	\includestandalone{quinto/grafici/disgraficoprob15}
 \end{center}
-Osservando il grafico notiamo che prima di $x=\dfrac{4-\sqrt{19}}{3}$ la derivata è positiva, poi va a zero infine è negativa. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un massimo.  Prima di $x=\dfrac{4+\sqrt{19}}{3}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo. 
+Osservando il grafico notiamo che prima di $x=-\dfrac{\sqrt{10}}{2}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo.  Prima di $x=0$ la derivata è positiva, poi va a zero infine è negativa. Quindi per $x=0$ la funzione ha un massimo. Prima di $x=\dfrac{\sqrt{10}}{2}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo.
+\litem{Flessi e concavità}
+
+Dal segno della derivata prima  vediamo che non ci sono flessi orizzontali.
+Per la concavità e gli altri flessi studiamo la derivata seconda
+\begin{align*}
+y'=&4x^3-10x\\
+y''=&\OpD{4^3-10x}\\
+=&8x^2-10\\
+\intertext{Studiamo il segno della derivata}
+8x^2-10\geq&0\\
+8x^2-10=&0\\
+x_{1,2}=&\pm\dfrac{\sqrt{320}}{16}\\
+=&\pm\dfrac{8\sqrt{5}}{16}\\
+=&\pm\dfrac{\sqrt{5}}{2}\\
+=\begin{cases}
+x_2=&+\dfrac{\sqrt{5}}{2}\\
+x_3=&-\dfrac{\sqrt{5}}{2}
+\end{cases}\\
+\end{align*}
+Otteniamo il grafico:
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob16}
+\end{center}
+Quindi la funzione ha prima la concavità positiva, successivamente diventa negativa per tornare infine, positiva.
+	\litem{Grafico probabile}
+\begin{center}
+	\includestandalone[width=0.5\textwidth]{quinto/grafici/graficoprobabile5}
+\end{center}
 \end{itemize}
-\end{exercise}
 %\begin{exercise}[no solution]
 %	It holds:
 %	\begin{equation*}
