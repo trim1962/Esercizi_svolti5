@@ -14,6 +14,17 @@ Risolvi i seguenti esercizi
 %	\end{equation*}
 %\end{exercise}
 \begin{exercise}
+	Calcola la derivata di $y=2x^3$
+	\tcblower
+Calcola la derivata di $y=2x^3$
+	\begin{align*}
+	y'=&\OpD{2x^3}
+	\intertext{Dato che è la derivata di una potenza}
+	=&\OpD{2x^{3}}\\
+	=&6x^{2}
+	\end{align*}\index{Derivata!potenza}
+\end{exercise}
+\begin{exercise}
 	Calcola la derivata di $y=\dfrac{2}{x^2}$
 	\tcblower
 	Calcola la derivata di $y=\dfrac{2}{x^2}$ 
@@ -23,7 +34,7 @@ Risolvi i seguenti esercizi
 	=&\OpD{2x^{-2}}\\
 	=&-4x^{-3}\\
 	=&-4\dfrac{1}{x^3}
-	\end{align*}\index{Derivata!somma}
+	\end{align*}\index{Derivata!potenza negativa}
 \end{exercise}
 \begin{exercise}
 Calcola la derivata di $y=3x+5$
@@ -44,13 +55,19 @@ y'=&\OpD{3x+5}
 	\begin{align*}
 	y'=&\OpD{y=-x^2+3x+6}
 	\intertext{Dato che è la derivata di una somma}
-	=&\OpD{-x^2}+\OpD{3x}+\OpD{3x}\\
+	=&\OpD{-x^2}+\OpD{3x}+\OpD{6}\\
 	=&-2x+3+0\\
 	=&-2x+3
 	\end{align*}\index{Derivata!somma}
 \end{exercise}
-\begin{exercise}[no solution]
+\begin{exercise}
 		Calcola la derivata di $y=x^4$
+		\tcblower
+			Calcola la derivata di $y=x^4$
+		\begin{align*}
+		y'=&\OpD{x^4}\\
+		=&4x^3
+		\end{align*}\index{Derivata!potenza}	
 \end{exercise}
 \begin{exercise}
 	Calcola la derivata di $y=x^4+3x^3$
@@ -89,8 +106,14 @@ y'=&\OpD{3x+5}
 	=&20x^4 + 32x^3 + 9x^2 + 4x + 3
 	\end{align*}\index{Derivata!prodotto}
 \end{exercise}
-\begin{exercise}[no solution]
+\begin{exercise}
 	Calcola la derivata di $y=(x^2+x)(4x^2-3x)$
+	\tcblower
+	Calcola la derivata di $y=(x^2+x)(4x^2-3x)$
+	\begin{align*}
+	y'=&\OpD{(x^2+x)(4x^2-3x)}\\
+	=&16 \; x^{3} - 21 \; x^{2} + 6 \; x\\
+	\end{align*}\index{Derivata!prodotto}
 \end{exercise}
 \begin{exercise}
 	Calcola la derivata di $y=(x^2+1)^2$
@@ -139,7 +162,32 @@ Calcola la derivata di $y=\dfrac{x^2-2x+1}{x-3}$
 	=&\dfrac{x^2-6x+5}{(x-3)^2}\\
 	\end{align*}\index{Derivata!quoziente}
 \end{exercise}
-
+\begin{exercise}
+	Calcola la derivata di $y=\dfrac{3x^2-1}{(x+2)^2}$
+	\tcblower
+		Calcola la derivata di $y=\dfrac{3x^2-1}{(x+2)^2}$
+	\begin{align*}
+	y'=&\OpD{\dfrac{3x^2-1}{(x+2)^2}}
+	\intertext{Dato che è la derivata di una razionale fratta}
+	=&\dfrac{6x(x+2)^2-2(x+2)(3x^2-1)}{(x+2)^4}\\
+	=&\dfrac{6x(x+2)-2(3x^2-1)}{(x+2)^3}\\
+	=&\dfrac{6x^2+12x-6x^2+2}{(x+2)^3}\\
+=&2 \cdot \frac{6 \; x + 1}{ \left(x + 2 \right)^{3}}\\
+	\end{align*}\index{Derivata!quoziente}
+\end{exercise}
+\begin{exercise}
+	Calcola la derivata di $y=\dfrac{x+5}{(x-3)^3}$
+	\tcblower
+	Calcola la derivata di $y=\dfrac{x+5}{(x-3)^3}$
+	\begin{align*}
+	y'=&\OpD{\dfrac{x+5}{(x-3)^3}}
+	\intertext{Dato che è la derivata di una razionale fratta}
+	=&\dfrac{(x-3)^3-3(x-3)^2(x+5)}{(x-3)^6}\\
+	=&\dfrac{(x-3)-3(x+5)}{(x-3)^4}\\
+	=&\dfrac{x-3-3x-15}{(x-3)^4}\\
+	=&-2 \cdot \frac{x + 9}{ \left(x - 3 \right)^{4}}\\
+	\end{align*}\index{Derivata!quoziente}
+\end{exercise}
 \tcbstoprecording
 \newpage
 \section{Soluzione esercizi}

@@ -14,7 +14,7 @@ Risolvi i seguenti esercizi
 %	
 %	\litem{Asintoti}
 %	\begin{enumerate}
-%		\item Asintoti verticali
+%		\item Asintoti verticali\index{Asintoto!verticale}\index{Asintoto!orizzontale}\index{Asintoto!obliquo}
 %		
 %		Utilizzando il grafico precedente
 %		
@@ -40,8 +40,111 @@ Risolvi i seguenti esercizi
 %	\frac{d}{dx}\left(\ln|x|\right) = \frac{1}{x}.
 %	\end{equation*}
 %\end{exercise}
-\begin{exercise}[no solution]
-	Disegnare il grafico probabile di questa funzione $f(x)=(x^2-1)(x^2-4)$
+\begin{exercise}
+	Disegnare il grafico probabile di questa funzione $f(x)=x^3$
+	\tcblower
+	Disegnare il grafico probabile di questa funzione $f(x)=x^3$
+		\begin{itemize}
+		\litem {Dominio}
+
+		La funzione essendo una razionale intera è definita su tutto  $\R$
+		\litem{Positività}
+		
+La funzione è positiva per $x>0$
+		
+		\litem{Asintoti}
+		\begin{enumerate}
+			\item Asintoti verticali\index{Asintoto!verticale}\index{Asintoto!orizzontale}\index{Asintoto!obliquo}
+			
+			Dato il dominio, non ha asintoti verticali.
+			
+			\item Asintoto orizzontale 
+				Calcoliamo il limite
+		\begin{align*}
+		\lim_{x\to +\infty}x^3=&\infty\\
+		\end{align*}
+		Quindi non esiste asintoto orizzontale
+		\item Asintoto obliquo
+		
+		Non esiste asintoto obliquo
+			
+		\end{enumerate}
+		\litem{Intersezioni}
+		\begin{enumerate}
+			\item Asse $x$
+					
+			\begin{align*}
+			&\begin{cases}
+			y=0\\
+			y=x^3
+			\end{cases}&
+			&\begin{cases}
+			y=0\\
+			x^3=0
+			\end{cases}
+			&
+			&\begin{cases}
+			y=0\\
+			x=0
+			\end{cases}
+			\end{align*}
+			Quindi abbiamo che la curva interseca l'asse $x$ in un punto.
+			\item asse $y$
+				\begin{align*}
+			&\begin{cases}
+			x=0\\
+			y=x^3
+			\end{cases}&
+			&\begin{cases}
+			x=0\\
+			y=(0)^3=0
+			\end{cases}\\
+			\end{align*}
+		\end{enumerate}
+	\litem{Derivata della funzione e segno della derivata}
+	\begin{align*}
+	y=&x^3\\
+	y'=&\OpD{x^3}\\
+	=&3x^2\\
+	\intertext{Studio il segno della derivata}
+	y'=&3x^2\geq 0
+	\intertext{risolvo l'equazione}
+	3x^2&=0\\
+	x_{1,2}=&\dfrac{\pm\sqrt{0}}{6}\\
+	=&0\\
+	=\begin{cases}
+	x_1=&0\\
+	x_2=&0
+	\end{cases}\\
+	\end{align*}
+	Otteniamo il grafico:
+	\begin{center}
+		\includestandalone{quinto/grafici/disgraficoprob17}
+	\end{center}
+	Osservando il grafico notiamo che prima e dopo di $x=0$ la derivata è positiva e per $x=0$ vale zero.  Quindi per $x=0$ la funzione ha un flesso.  
+	\litem{Flessi e concavità}\index{Flesso}\index{Concavità}
+	
+	Dal segno della derivata prima  vediamo che  c'è un flesso orizzontale.
+	Per la concavità e gli altri flessi studiamo la derivata seconda
+	\begin{align*}
+	y'=&3x^2\\
+	y''=&\OpD{3x^2}\\
+	=&6x\\
+	\intertext{Studiamo il segno della derivata}
+	6x\geq&0\\
+	x\geq&0\\
+	\end{align*}
+	Otteniamo il grafico:
+	\begin{center}
+		\includestandalone{quinto/grafici/disgraficoprob18}
+	\end{center}
+	Da grafico, per valori di $x<0$ la concavità è rivolta verso il basso. Per valori di $x>0$   la concavità è rivolta vero l'alto. Per $x=0$ è un punto di flesso.
+		\litem{Grafico probabile}
+	\begin{center}
+		\includestandalone[width=0.5\textwidth]{quinto/grafici/graficoprobabile6}
+	\end{center}
+\end{itemize}
+
 \end{exercise}
 \begin{exercise}
 	Disegnare il grafico probabile di questa funzione $f(x)=(x^2-1)(x-4)$
@@ -72,7 +175,7 @@ Otteniamo il grafico:
 Dal diagramma vediamo che la funzione è positiva per valori di $x$ compresi tra meno uno e più uno e per valori di $x$ maggiori di quattro $-1\leq x \leq 1$ o $x\geq 4$
 	\litem{Asintoti}
 	\begin{enumerate}
-		\item Asintoti verticali
+		\item Asintoti verticali\index{Asintoto!verticale}\index{Asintoto!orizzontale}\index{Asintoto!obliquo}
 		
 		Visto il dominio non esistono asintoti verticali.
 		\item Asintoto orizzontale 
@@ -160,7 +263,7 @@ Otteniamo il grafico:
 	\includestandalone{quinto/grafici/disgraficoprob12}
 \end{center}
 Osservando il grafico notiamo che prima di $x=\dfrac{4-\sqrt{19}}{3}$ la derivata è positiva, poi va a zero infine è negativa. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un massimo.  Prima di $x=\dfrac{4+\sqrt{19}}{3}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo. 
-\litem{Flessi e concavità}
+\litem{Flessi e concavità}\index{Flesso}\index{Concavità}
 
 Dal segno della derivata prima  vediamo che non ci sono flessi orizzontali.
 Per la concavità e gli altri flessi studiamo la derivata seconda
@@ -219,7 +322,7 @@ Da grafico, per valori di $x<\dfrac{4}{3}$ la concavità è rivolta verso il bas
 			Dal diagramma vediamo che la funzione è positiva quando $x\leq -2$, $-1\leq x \leq 1$ e $x\geq 2$.
 				\litem{Asintoti}
 			\begin{enumerate}
-				\item Asintoti verticali
+				\item Asintoti verticali\index{Asintoto!verticale}\index{Asintoto!orizzontale}\index{Asintoto!obliquo}
 				
 				Visto il dominio non esistono asintoti verticali.
 				\item Asintoto orizzontale 
@@ -312,7 +415,7 @@ Otteniamo il grafico:
 	\includestandalone{quinto/grafici/disgraficoprob15}
 \end{center}
 Osservando il grafico notiamo che prima di $x=-\dfrac{\sqrt{10}}{2}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo.  Prima di $x=0$ la derivata è positiva, poi va a zero infine è negativa. Quindi per $x=0$ la funzione ha un massimo. Prima di $x=\dfrac{\sqrt{10}}{2}$ la derivata è negativa, poi va a zero infine è positiva. Quindi per $x=\dfrac{4-\sqrt{19}}{3}$ la funzione ha un minimo.
-\litem{Flessi e concavità}
+\litem{Flessi e concavità}\index{Flesso}\index{Concavità}
 
 Dal segno della derivata prima  vediamo che non ci sono flessi orizzontali.
 Per la concavità e gli altri flessi studiamo la derivata seconda
