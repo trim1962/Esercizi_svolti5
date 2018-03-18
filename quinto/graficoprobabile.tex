@@ -43,6 +43,117 @@ Risolvi i seguenti esercizi
 Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 \end{exercise}
 \begin{exercise}
+Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-1}$
+	\tcblower
+Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-1}$
+	\begin{itemize}
+	\litem {Dominio}
+		\begin{align*}
+	3x-1=&0\\
+	x=&\dfrac{1}{3}\\
+	x\neq&\dfrac{1}{3}	
+	\end{align*}
+	\litem{Positività}
+	\begin{align*}
+		\dfrac{2x+1}{3x-1}\geq&0\\
+	2x+1\geq&0\\
+	x\geq&-\dfrac{1}{2}\\
+	3x-1>&0\\
+x>&\dfrac{1}{3}
+	\end{align*}
+	Otteniamo il grafico:
+		\begin{center}
+		\includestandalone{quinto/grafici/disgraficoprob20}
+	\end{center}
+	\litem{Asintoti}
+	\begin{enumerate}
+		\item Asintoti verticali\index{Asintoto!verticale}\index{Asintoto!orizzontale}\index{Asintoto!obliquo}
+		
+		Utilizzando il grafico precedente
+			\begin{align*}
+		\lim_{x\to\frac{1}{3}^-}\dfrac{2x+1}{3x-1}=&-\infty\\
+		\lim_{x\to\frac{1}{3}^+}\dfrac{2x+1}{3x-1}=&+\infty\\
+		x=&\dfrac{1}{3}\\
+		\intertext{è asintoto verticale}
+		\end{align*}
+		\item Asintoto orizzontale 
+		\begin{align*}
+		\lim_{x\to +\infty}\dfrac{2x+1}{3x-1}=&\\
+		=&\lim_{x\to +\infty}\dfrac{x\left(2+\dfrac{1}{x}\right)}{x\left(3-\dfrac{1}{x}\right)}\\
+		=&\dfrac{2}{3}\\
+		y=&\dfrac{2}{3}
+		\intertext{asintoto orizzontale}
+		\end{align*}
+		\item Asintoto obliquo
+		
+		Non esistono asintoti obliqui.
+	\end{enumerate}
+	\litem{Intersezioni}
+	\begin{enumerate}
+		\item Asse $x$
+			\begin{align*}
+		&\begin{cases}
+		y=\dfrac{2x+1}{3x-1}\\
+		y=0\\
+		\end{cases}&
+		&\begin{cases}
+		2x+1=0\\
+		y=0\\
+		\end{cases}
+		&\begin{cases}
+		x=-\dfrac{1}{2}\\
+		y=0
+		\end{cases}\\
+		\end{align*}
+		\item asse $y$
+			\begin{align*}
+		&\begin{cases}
+		y=\dfrac{2x+1}{3x-1}\\
+		x=0\\
+		\end{cases}&
+		&\begin{cases}
+		y=\dfrac{0+1}{0-1}\\
+		x=0\\
+		\end{cases}
+		&\begin{cases}
+		y=-1\\
+		x=0
+		\end{cases}
+		\end{align*}
+		\item Asintoti
+			\begin{align*}
+		&\begin{cases}
+		y=\dfrac{2x+1}{3x-1}\\
+		\\
+		y=\dfrac{2}{3}\\
+		\end{cases}
+		\end{align*}
+		
+		Non ha soluzione
+	\end{enumerate}
+\litem{Derivata della funzione e segno della derivata}
+\begin{align*}
+y=\dfrac{2x+1}{3x-1}\\
+y'=&\OpD{\dfrac{2x+1}{3x-1}}\\
+=&\dfrac{2(3x-1)-3(2x+1)}{(3x-1)^2}\\
+=&\dfrac{6x-2-6x-1}{(3x-1)^2}
+=&\dfrac{-3}{(3x-1)^2}
+\intertext{Studio il segno della derivata}
+y'=&\dfrac{-3}{(3x-1)^2}\geq 0\\
+\intertext{Sia il denominatore che è un quadrato, che il numeratore hanno segno costante}
+\end{align*}
+Ottengo il grafico
+	\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob21}
+\end{center}
+La derivata ha segno costante e non esiste per $x=\frac{1}{3}$ ne massimo ne minimo
+\litem{Flessi e concavità}\index{Flesso}\index{Concavità}
+
+	\litem{Grafico probabile}
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
 	Trovare il grafico probabile della funzione $y=\dfrac{x^2-1}{x+5}$ 
 	\tcblower
 	Trovare il grafico probabile della funzione $y=\dfrac{x^2-1}{x+5}$ 
@@ -146,9 +257,9 @@ Disegna il grafico probabile di questa funzione $f(x)= \dfrac{2x+1}{3x-2}$
 	\end{enumerate}
 \litem{Derivata della funzione e segno della derivata}
 \begin{align*}
-y=&\dfrac{2x+1}{3x-1}\\
-y'=&\OpD{\dfrac{2x+1}{3x-1}}\\
-=&\dfrac{2(3x-2)-3(2x+1)}{(3x-2)^2}\\
+y=&\dfrac{x^2-1}{x+5}\\
+y'=&\OpD{\dfrac{x^2-1}{x+5}}\\
+=&\dfrac{2(x+5)-(x^2-1)}{(x+5)^2}\\
 =&\dfrac{x^2+10x+1}{(x+5)^2}
 \intertext{Studio il segno della derivata}
 y'=&\dfrac{x^2+10x+1}{(x+5)^2}\geq 0\\
