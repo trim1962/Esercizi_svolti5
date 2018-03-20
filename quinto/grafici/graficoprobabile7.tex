@@ -1,0 +1,26 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+
+\draw[->] (-5.,0.) -- (5.,0.);
+\foreach \x in {-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+\draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->] (0.,-4.) -- (0.,4.);
+\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
+\draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.,-4.) rectangle (5.,4.);
+\draw[smooth,samples=500,domain=-5.0:5.0] plot(\x,{(2.0*(\x)+1.0)/(3.0*(\x)-1.0)});
+\draw [domain=-5.:5.] plot(\x,{(--0.6666666666666666-0.*\x)/1.});
+\draw  (0.3333333333333333,-4.) -- (0.3333333333333333,4.);
+
+\end{tikzpicture}
+\end{document}
