@@ -58,12 +58,30 @@ x\geq&1\\
 	\begin{center}
 		\includestandalone{quinto/grafici/disgraficoprob24}
 	\end{center}
-Per $x=0$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. Per $x=1$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=2$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. 
+Per $x=0$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. Per $x=1$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=2$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo.\index{Massimo}\index{Minimo} 
 \end{exercise}
-
-
-\begin{exercise}[no solution]
+\begin{exercise}
 	Calcolare i punti di massimo e di minimo della funzione $y=x^{3} \;  \left(x - 2 \right)^{2}$
+		\tcblower
+	Calcolare i punti di massimo e di minimo della funzione $y=x^{3} \;  \left(x - 2 \right)^{2}$
+	\begin{align*}
+	y=&x^{3} \;  \left(x - 2 \right)^{2}\\
+	y'=&\OpD{x^{3} \;  \left(x - 2 \right)^{2}}\\
+	=& 3 \; x^{2} \;  \left(x - 2 \right)^{2} + 2 \; x^{3} \;  \left(x - 2 \right)\\
+	\intertext{Raccogliendo il fattore comune}
+	=&x^{2} \;  \left(x - 2 \right) \;  \left(5 \; x - 6 \right)
+	\intertext{Otteniamo tre disequazioni}
+	x^2\geq&0\\
+	x-2\geq& 0\\
+	x\geq&2\\
+5 \; x - 6\geq&0\\
+	x\geq&\dfrac{6}{5}\\
+	\end{align*}
+	Otteniamo il grafico
+	\begin{center}
+		\includestandalone{quinto/grafici/disgraficoprob25}
+	\end{center}
+	Per $x=0$ la derivata è positiva nulla positiva, quindi la funzione ha un flesso\index{Flesso}. Per $x=\dfrac{6}{5}$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=2$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo.\index{Massimo}\index{Minimo} 
 \end{exercise}
 \begin{exercise}[no solution]
 	Calcolare i punti di massimo e di minimo della funzione $y=x^{4} \;  \left(x - 2 \right)^{2}$
@@ -92,7 +110,7 @@ x_2=\dfrac{-5+1}{6}=-\dfrac{2}{3}\\
 \begin{center}
 	\includestandalone{quinto/grafici/disgraficoprob19}
 \end{center}
-Per $x=-1$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=-\dfrac{2}{3}$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. 
+Per $x=-1$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=-\dfrac{2}{3}$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo.\index{Massimo}\index{Minimo} 
 \end{exercise}
 \tcbstoprecording
 \newpage
@@ -112,6 +130,7 @@ y'=&\OpD{\dfrac{x^2+4}{x}}\\
 =&\frac{2x^2-(x^2-4)}{x^{2}}\\
 =&\frac{x^{2} - 4}{x^{2}}\\
 =&\frac{x^{2} - 4}{x^{2}}\geq 0\\
+\intertext{Ottengo due disequazioni}
 x^2-4\geq 0\\
 x_{1,2}=&\dfrac{\pm\sqrt{+16}}{2}\\
 =&\dfrac{\pm 4}{2}\\
@@ -120,7 +139,13 @@ x_1=\dfrac{+4}{2}=+2\\
 \\
 x_2=\dfrac{-4}{2}=-2\\
 \end{cases}
+x^2>&0
 \end{align*}
+Ottengo il grafico
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob26}
+\end{center}
+Per $x=-2$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=2$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. Per $x=0$ la derivata non esiste e la funzione non a un flesso.\index{Massimo}\index{Minimo} 
 \end{exercise}
 \tcbstoprecording
 \newpage
