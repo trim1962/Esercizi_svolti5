@@ -145,7 +145,68 @@ Ottengo il grafico
 \begin{center}
 	\includestandalone{quinto/grafici/disgraficoprob26}
 \end{center}
-Per $x=-2$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=2$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. Per $x=0$ la derivata non esiste e la funzione non a un flesso.\index{Massimo}\index{Minimo} 
+Per $x=-2$ la derivata è positiva nulla negativa, quindi la funzione ha un massimo. Per $x=2$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. Per $x=0$ la  derivata e la funzione non esistono e la funzione non ha un flesso.\index{Massimo}\index{Minimo}\index{Flesso}
+\end{exercise}
+\begin{exercise}
+Calcolare i punti di massimo e di minimo della funzione $y=\dfrac{x^{2} - 9}{x^{2} - 4}$
+	\tcblower
+Calcolare i punti di massimo e di minimo della funzione $y=\dfrac{x^{2} - 9}{x^{2} - 4}$
+Calcolo il segno della derivata prima
+\begin{align*}
+y=&\dfrac{x^{2} - 9}{x^{2} - 4}\\
+y'=&\OpD{\dfrac{x^{2} - 9}{x^{2} - 4}}\\
+=&\frac{2 \; x \;  \left(x^{2} - 4 \right) - 2 \; x \;  \left(x^{2} - 9 \right)}{ \left(x^{2} - 4 \right)^{2}}\\
+=&\frac{2x^3-8x-2x^3+18x}{(x^2-4)^2}\\
+=&\frac{10x}{(x^2-4)^2}> 0\\
+\intertext{Ottengo due disequazioni}
+(x^2-4)^2>&0\\
+\intertext{Il denominatore è sempre positivo e si annulla per}
+x_{1,2}=&\dfrac{\pm\sqrt{+16}}{2}\\
+=&\dfrac{\pm 4}{2}\\
+=&\begin{cases}
+x_1=\dfrac{+4}{2}=+2\\
+\\
+x_2=\dfrac{-4}{2}=-2\\
+\end{cases}
+\intertext{Il numeratore invece}
+10 \;x\geq&0\\
+x\geq&0\\
+\end{align*}
+Otteniamo il grafico
+\begin{center}
+	\includestandalone{quinto/grafici/disgraficoprob27}
+\end{center}
+ Per $x=0$ la derivata è negativa nulla positiva, quindi la funzione ha un minimo. Per $x=-2$ e per $x=+2$ la  derivata e la funzione non esistono e la funzione non ha un flesso.\index{Massimo}\index{Minimo}\index{Flesso}
+\end{exercise}
+\begin{exercise}
+Calcolare i punti di massimo e di minimo della funzione $y=\dfrac{x^2+4x}{x^2+6x+5}$
+	\tcblower
+Calcolare i punti di massimo e di minimo della funzione $y=\dfrac{x^2+4x}{x^2+6x+5}$
+Calcolo il segno della derivata prima
+\begin{align*}
+y=&\dfrac{x^2+4x}{x^2+6x+5}\\
+y'=&\OpD{\dfrac{x^2+4x}{x^2+6x+5}}\\
+=&\frac{ \left(2 \; x + 4 \right) \;  \left(x^{2} + 6 \; x + 5 \right) - \left(x^{2} + 4 \; x \right) \;  \left(2 \; x + 6 \right) }{ \left(x^{2} + 6 \; x + 5 \right)^{2}}\\
+=&\frac{2x^3+12x^2+10x+4x^2+24x+20-2x^3-6x^2-8x^2-24x}{ \left(x^{2} + 6 \; x + 5 \right)^{2}}\\
+=&\frac{2x^2+10x+20}{ \left(x^{2} + 6 \; x + 5 \right)^{2}}> 0\\
+\intertext{Ottengo due disequazioni}
+\left(x^{2} + 6 \; x + 5 \right)^{2}>&0\\
+\intertext{Il denominatore è sempre positivo e si annulla per}
+x_{1,2}=&\dfrac{-6\pm\sqrt{36-20}}{2}\\
+=&\dfrac{-6\pm 4}{2}\\
+=&\begin{cases}
+x_1=\dfrac{-10}{2}=-5\\
+\\
+x_2=\dfrac{-2}{2}=-1\\
+\end{cases}
+\intertext{Il numeratore invece}
+2x^2+10x+20\geq&0\\
+x_{1,2}=&\dfrac{-10\pm\sqrt{100-160}}{2}\\
+=&\dfrac{-10\pm\sqrt{-60}}{2}\\
+\intertext{Delta negativo}
+\end{align*}
+Otteniamo il grafico
+
 \end{exercise}
 \tcbstoprecording
 \newpage
