@@ -83,6 +83,7 @@
 	baseurl={http://breviariomatematico.altervista.org}
 }
 \usepackage{tkz-berge}
+\usepackage{qrcode}
 \listfiles
 \input{compilaTexStudio}
 \begin{document}
@@ -98,12 +99,12 @@
 		\vfill
 %	\end{center}
 %	\begin{center}
-		\begin{tikzpicture}
+			{\centering\begin{tikzpicture}
 		\renewcommand*{\VertexBallColor}{green!50!black}
 		\GraphInit[vstyle=Art]
 		\grComplete[RA=5]{12}
 		\end{tikzpicture}
-			{\centering
+		
 			Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
 			\gitCommitterDate \\
 		}
@@ -119,4 +120,5 @@
 \end{appendices}
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex
+
 \end{document}
